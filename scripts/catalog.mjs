@@ -194,6 +194,26 @@ export function renderReadme(entries, locale) {
     }
     lines.push('')
   }
+  const screenshots = JSON.parse(readFileSync(join(ROOT, 'docs/screenshots.json'), 'utf8'))
+  const knownIds = new Set(entries.map(entry => entry.id))
+  lines.push(en ? '## What these plugins do' : '## 这些插件做什么', '')
+  lines.push(en
+    ? 'The screenshots below show the Settings and conversation surfaces these plugins add. Each caption is a factual description of the pictured UI, not an endorsement of the named third-party services.'
+    : '下面的截图展示这些插件加入的设置页和对话界面。图注只描述画面内容，不构成对所涉第三方服务的背书。')
+  lines.push('')
+  for (const group of screenshots.groups) {
+    for (const pluginId of group.pluginIds) {
+      if (!knownIds.has(pluginId)) fail('docs/screenshots.json', 'unknown plugin id ' + pluginId)
+    }
+    lines.push('### ' + group.title[locale], '')
+    lines.push(group.purpose[locale], '')
+    const images = group.screenshots ?? [group.screenshot]
+    for (const image of images) {
+      lines.push('![' + image.alt[locale] + '](' + image.src + ')', '')
+      lines.push(image.alt[locale], '')
+    }
+    lines.push((en ? 'Related entries: ' : '相关条目：') + group.pluginIds.map(id => '[' + id + '](https://github.com/NOirBRight/' + id + ')').join(', '), '')
+  }
   const notices = entries.filter(entry => entry.notice !== undefined)
   if (notices.length > 0) {
     lines.push(en ? '## Policy-specific notices' : '## 特定政策提示', '')

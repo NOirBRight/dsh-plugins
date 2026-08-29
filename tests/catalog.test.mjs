@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import test from 'node:test'
 import { loadEntries, renderIndex, renderReadme, ROOT, validateEntry } from '../scripts/catalog.mjs'
@@ -28,8 +28,22 @@ test('high-impact disclosures remain explicit', () => {
   assert.match(readme, /account can be restricted or banned/i)
   assert.match(readme, /Mobile app/)
   assert.match(readme, /e06f26e03bda6a6c3a2c3b15d437e8169b177e78a1119a1ee607e0c239fed4b7/)
+  assert.match(readme, /What these plugins do/)
+  assert.match(readme, /docs\/screenshots\/llm-providers.jpg/)
+  assert.match(readme, /docs\/screenshots\/model-switch.jpg/)
+  assert.match(readme, /docs\/screenshots\/plan-review.jpg/)
+  assert.match(readme, /docs\/screenshots\/composer-picker.jpg/)
+  assert.match(readme, /docs\/screenshots\/mobile-remote.jpg/)
+  assert.match(readme, /docs\/screenshots\/usage-monitor.jpg/)
   assert.equal(index.plugins.length, 12)
   assert.equal(index.companionApps.length, 1)
+})
+
+test('screenshot files exist for every README image', () => {
+  const screenshots = JSON.parse(readFileSync(join(ROOT, 'docs/screenshots.json'), 'utf8'))
+  const images = screenshots.groups.flatMap(group => group.screenshots ?? [group.screenshot])
+  assert.equal(images.length, 6)
+  for (const image of images) assert.equal(existsSync(join(ROOT, image.src)), true)
 })
 
 test('validator rejects unknown fields and incomplete companion apps', () => {

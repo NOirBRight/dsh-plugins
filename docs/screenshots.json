@@ -1,0 +1,125 @@
+{
+  "groups": [
+    {
+      "id": "llm-providers",
+      "title": {
+        "en": "LLM Providers",
+        "zh": "LLM 提供商"
+      },
+      "purpose": {
+        "en": "Add extra model providers into Settings → LLM Providers. After sign-in or API configuration, those models appear in the chat picker and can be routed independently.",
+        "zh": "在设置 → LLM 提供商中接入额外模型源。登录或配置完成后，这些模型会出现在对话选择器里，并可被独立路由。"
+      },
+      "screenshot": {
+        "src": "docs/screenshots/llm-providers.jpg",
+        "alt": {
+          "en": "Settings → LLM Providers listing Cursor, Grok, Codex, Ollama Cloud, Command Code, and OpenCode Go.",
+          "zh": "设置 → LLM 提供商页面，列出 Cursor、Grok、Codex、Ollama Cloud、Command Code 和 OpenCode Go。"
+        }
+      },
+      "pluginIds": [
+        "dsh-llm-cursor",
+        "dsh-llm-grok",
+        "dsh-llm-codex",
+        "dsh-llm-ollama",
+        "dsh-llm-commandcode",
+        "dsh-llm-opencode-go"
+      ]
+    },
+    {
+      "id": "model-switch",
+      "title": {
+        "en": "Model Switch",
+        "zh": "模型路由"
+      },
+      "purpose": {
+        "en": "Assign different models to Main, Subagent, Composer, Plan Review, Web Search, and image generation. The change applies to new requests only; existing runs keep their original route.",
+        "zh": "分别为 Main、Subagent、Composer、Plan Review、Web Search 和图像生成指定模型。设置只影响新请求，进行中的任务仍沿用原路由。"
+      },
+      "screenshot": {
+        "src": "docs/screenshots/model-switch.jpg",
+        "alt": {
+          "en": "Settings → Model Switch with Grok as Main, OpenCode Go as Subagent, and Codex for Web Search and image generation.",
+          "zh": "设置 → 模型路由页面：Main 使用 Grok，Subagent 使用 OpenCode Go，Web Search 和图像生成使用 Codex。"
+        }
+      },
+      "pluginIds": [
+        "dsh-model-switch"
+      ]
+    },
+    {
+      "id": "composer-and-plan",
+      "title": {
+        "en": "Composer and Plan Review",
+        "zh": "Composer 与 Plan Review"
+      },
+      "purpose": {
+        "en": "The current routing plugin also owns the composer model picker and the plan-review card. You can switch Fast, context, effort, and the execution model before approving a plan. dsh-composer-picker provided the original picker and is now deprecated.",
+        "zh": "当前路由插件同时接管 Composer 模型选择器和 Plan Review 卡片。批准计划前可切换 Fast、上下文、effort 和执行模型。dsh-composer-picker 是最初的选择器，现已弃用。"
+      },
+      "screenshots": [
+        {
+          "src": "docs/screenshots/plan-review.jpg",
+          "alt": {
+            "en": "Plan Review card with Discuss, Keep planning, and Approve, plus a popover to change the execution model and effort.",
+            "zh": "Plan Review 卡片，含 Discuss、Keep planning、Approve，以及可切换执行模型和 effort 的弹出菜单。"
+          }
+        },
+        {
+          "src": "docs/screenshots/composer-picker.jpg",
+          "alt": {
+            "en": "Composer popover with Model, Effort, Context, and Fast controls for GPT-5.6 Sol.",
+            "zh": "Composer 弹出菜单，显示 GPT-5.6 Sol 的 Model、Effort、Context 和 Fast 选项。"
+          }
+        }
+      ],
+      "pluginIds": [
+        "dsh-model-switch",
+        "dsh-composer-picker"
+      ]
+    },
+    {
+      "id": "mobile-remote",
+      "title": {
+        "en": "Mobile Remote",
+        "zh": "手机远程"
+      },
+      "purpose": {
+        "en": "Pair a phone with this Host. dsh-mobile-pairing generates a short-lived QR code and encrypted tunnel; the Android app in dsh-mobile scans it and keeps the connection on your own machine.",
+        "zh": "把手机配对到这台 Host。dsh-mobile-pairing 生成短时二维码和加密隧道；dsh-mobile Android 应用扫码后仍连接到你自己的机器。"
+      },
+      "screenshot": {
+        "src": "docs/screenshots/mobile-remote.jpg",
+        "alt": {
+          "en": "Settings → Remote generating an automatic connection address and pairing QR code.",
+          "zh": "设置 → 远程页面正在自动生成连接地址和配对二维码。"
+        }
+      },
+      "pluginIds": [
+        "dsh-mobile-pairing",
+        "dsh-mobile"
+      ]
+    },
+    {
+      "id": "usage-monitor",
+      "title": {
+        "en": "Usage",
+        "zh": "用量"
+      },
+      "purpose": {
+        "en": "Read token usage from session logs and chart it by provider, model, or workspace. It does not fetch subscription quotas from the providers.",
+        "zh": "从会话日志读取 token 用量，并按供应商、模型或工作区作图。它不会向各供应商拉取订阅额度。"
+      },
+      "screenshot": {
+        "src": "docs/screenshots/usage-monitor.jpg",
+        "alt": {
+          "en": "Settings → Usage dashboard showing token, request, output, and cache-hit totals by provider.",
+          "zh": "设置 → 用量看板，按供应商展示 token、请求、输出和缓存命中。"
+        }
+      },
+      "pluginIds": [
+        "dsh-usage-monitor"
+      ]
+    }
+  ]
+}

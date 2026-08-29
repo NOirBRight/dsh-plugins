@@ -46,6 +46,64 @@
 |---|---|---:|---|---|---|
 | [dsh-usage-monitor](https://github.com/NOirBRight/dsh-usage-monitor) | 插件 | [v0.2.6](https://github.com/NOirBRight/dsh-usage-monitor/tree/v0.2.6) | 维护中 | 会话日志用量看板，展示 token、请求、输出和缓存命中率，并按供应商、模型或工作区分组。 | 会话数据, 界面扩展 |
 
+## 这些插件做什么
+
+下面的截图展示这些插件加入的设置页和对话界面。图注只描述画面内容，不构成对所涉第三方服务的背书。
+
+### LLM 提供商
+
+在设置 → LLM 提供商中接入额外模型源。登录或配置完成后，这些模型会出现在对话选择器里，并可被独立路由。
+
+![设置 → LLM 提供商页面，列出 Cursor、Grok、Codex、Ollama Cloud、Command Code 和 OpenCode Go。](docs/screenshots/llm-providers.jpg)
+
+设置 → LLM 提供商页面，列出 Cursor、Grok、Codex、Ollama Cloud、Command Code 和 OpenCode Go。
+
+相关条目：[dsh-llm-cursor](https://github.com/NOirBRight/dsh-llm-cursor), [dsh-llm-grok](https://github.com/NOirBRight/dsh-llm-grok), [dsh-llm-codex](https://github.com/NOirBRight/dsh-llm-codex), [dsh-llm-ollama](https://github.com/NOirBRight/dsh-llm-ollama), [dsh-llm-commandcode](https://github.com/NOirBRight/dsh-llm-commandcode), [dsh-llm-opencode-go](https://github.com/NOirBRight/dsh-llm-opencode-go)
+
+### 模型路由
+
+分别为 Main、Subagent、Composer、Plan Review、Web Search 和图像生成指定模型。设置只影响新请求，进行中的任务仍沿用原路由。
+
+![设置 → 模型路由页面：Main 使用 Grok，Subagent 使用 OpenCode Go，Web Search 和图像生成使用 Codex。](docs/screenshots/model-switch.jpg)
+
+设置 → 模型路由页面：Main 使用 Grok，Subagent 使用 OpenCode Go，Web Search 和图像生成使用 Codex。
+
+相关条目：[dsh-model-switch](https://github.com/NOirBRight/dsh-model-switch)
+
+### Composer 与 Plan Review
+
+当前路由插件同时接管 Composer 模型选择器和 Plan Review 卡片。批准计划前可切换 Fast、上下文、effort 和执行模型。dsh-composer-picker 是最初的选择器，现已弃用。
+
+![Plan Review 卡片，含 Discuss、Keep planning、Approve，以及可切换执行模型和 effort 的弹出菜单。](docs/screenshots/plan-review.jpg)
+
+Plan Review 卡片，含 Discuss、Keep planning、Approve，以及可切换执行模型和 effort 的弹出菜单。
+
+![Composer 弹出菜单，显示 GPT-5.6 Sol 的 Model、Effort、Context 和 Fast 选项。](docs/screenshots/composer-picker.jpg)
+
+Composer 弹出菜单，显示 GPT-5.6 Sol 的 Model、Effort、Context 和 Fast 选项。
+
+相关条目：[dsh-model-switch](https://github.com/NOirBRight/dsh-model-switch), [dsh-composer-picker](https://github.com/NOirBRight/dsh-composer-picker)
+
+### 手机远程
+
+把手机配对到这台 Host。dsh-mobile-pairing 生成短时二维码和加密隧道；dsh-mobile Android 应用扫码后仍连接到你自己的机器。
+
+![设置 → 远程页面正在自动生成连接地址和配对二维码。](docs/screenshots/mobile-remote.jpg)
+
+设置 → 远程页面正在自动生成连接地址和配对二维码。
+
+相关条目：[dsh-mobile-pairing](https://github.com/NOirBRight/dsh-mobile-pairing), [dsh-mobile](https://github.com/NOirBRight/dsh-mobile)
+
+### 用量
+
+从会话日志读取 token 用量，并按供应商、模型或工作区作图。它不会向各供应商拉取订阅额度。
+
+![设置 → 用量看板，按供应商展示 token、请求、输出和缓存命中。](docs/screenshots/usage-monitor.jpg)
+
+设置 → 用量看板，按供应商展示 token、请求、输出和缓存命中。
+
+相关条目：[dsh-usage-monitor](https://github.com/NOirBRight/dsh-usage-monitor)
+
 ## 特定政策提示
 
 - **[dsh-llm-commandcode](https://github.com/NOirBRight/dsh-llm-commandcode)** — 聊天使用文档化 Provider API；可选额度展示还会读取官方 CLI 使用的非公开账户接口。

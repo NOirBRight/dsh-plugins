@@ -46,6 +46,64 @@ An independent, machine-readable catalog of DSH plugins and the mobile companion
 |---|---|---:|---|---|---|
 | [dsh-usage-monitor](https://github.com/NOirBRight/dsh-usage-monitor) | Plugin | [v0.2.6](https://github.com/NOirBRight/dsh-usage-monitor/tree/v0.2.6) | Active | Session-log usage dashboard for tokens, requests, output, and cache-hit rates, grouped by provider, model, or workspace. | Session data, UI extension |
 
+## What these plugins do
+
+The screenshots below show the Settings and conversation surfaces these plugins add. Each caption is a factual description of the pictured UI, not an endorsement of the named third-party services.
+
+### LLM Providers
+
+Add extra model providers into Settings → LLM Providers. After sign-in or API configuration, those models appear in the chat picker and can be routed independently.
+
+![Settings → LLM Providers listing Cursor, Grok, Codex, Ollama Cloud, Command Code, and OpenCode Go.](docs/screenshots/llm-providers.jpg)
+
+Settings → LLM Providers listing Cursor, Grok, Codex, Ollama Cloud, Command Code, and OpenCode Go.
+
+Related entries: [dsh-llm-cursor](https://github.com/NOirBRight/dsh-llm-cursor), [dsh-llm-grok](https://github.com/NOirBRight/dsh-llm-grok), [dsh-llm-codex](https://github.com/NOirBRight/dsh-llm-codex), [dsh-llm-ollama](https://github.com/NOirBRight/dsh-llm-ollama), [dsh-llm-commandcode](https://github.com/NOirBRight/dsh-llm-commandcode), [dsh-llm-opencode-go](https://github.com/NOirBRight/dsh-llm-opencode-go)
+
+### Model Switch
+
+Assign different models to Main, Subagent, Composer, Plan Review, Web Search, and image generation. The change applies to new requests only; existing runs keep their original route.
+
+![Settings → Model Switch with Grok as Main, OpenCode Go as Subagent, and Codex for Web Search and image generation.](docs/screenshots/model-switch.jpg)
+
+Settings → Model Switch with Grok as Main, OpenCode Go as Subagent, and Codex for Web Search and image generation.
+
+Related entries: [dsh-model-switch](https://github.com/NOirBRight/dsh-model-switch)
+
+### Composer and Plan Review
+
+The current routing plugin also owns the composer model picker and the plan-review card. You can switch Fast, context, effort, and the execution model before approving a plan. dsh-composer-picker provided the original picker and is now deprecated.
+
+![Plan Review card with Discuss, Keep planning, and Approve, plus a popover to change the execution model and effort.](docs/screenshots/plan-review.jpg)
+
+Plan Review card with Discuss, Keep planning, and Approve, plus a popover to change the execution model and effort.
+
+![Composer popover with Model, Effort, Context, and Fast controls for GPT-5.6 Sol.](docs/screenshots/composer-picker.jpg)
+
+Composer popover with Model, Effort, Context, and Fast controls for GPT-5.6 Sol.
+
+Related entries: [dsh-model-switch](https://github.com/NOirBRight/dsh-model-switch), [dsh-composer-picker](https://github.com/NOirBRight/dsh-composer-picker)
+
+### Mobile Remote
+
+Pair a phone with this Host. dsh-mobile-pairing generates a short-lived QR code and encrypted tunnel; the Android app in dsh-mobile scans it and keeps the connection on your own machine.
+
+![Settings → Remote generating an automatic connection address and pairing QR code.](docs/screenshots/mobile-remote.jpg)
+
+Settings → Remote generating an automatic connection address and pairing QR code.
+
+Related entries: [dsh-mobile-pairing](https://github.com/NOirBRight/dsh-mobile-pairing), [dsh-mobile](https://github.com/NOirBRight/dsh-mobile)
+
+### Usage
+
+Read token usage from session logs and chart it by provider, model, or workspace. It does not fetch subscription quotas from the providers.
+
+![Settings → Usage dashboard showing token, request, output, and cache-hit totals by provider.](docs/screenshots/usage-monitor.jpg)
+
+Settings → Usage dashboard showing token, request, output, and cache-hit totals by provider.
+
+Related entries: [dsh-usage-monitor](https://github.com/NOirBRight/dsh-usage-monitor)
+
 ## Policy-specific notices
 
 - **[dsh-llm-commandcode](https://github.com/NOirBRight/dsh-llm-commandcode)** — Chat uses the documented Provider API; optional quota reporting also reads unofficial account routes used by the official CLI.

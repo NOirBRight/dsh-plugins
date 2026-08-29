@@ -10,6 +10,6 @@ This repository catalogs DSH plugins and the mobile companion published by [NOir
 4. Run `npm test` and `GITHUB_TOKEN="$(gh auth token)" npm run verify:remote` (or provide another read-only GitHub token).
 5. Commit the catalog source and generated files together.
 
-Do not hand-edit `README.md`, `README.zh.md`, or `dist/index.json`. The generator owns them.
+Do not hand-edit `README.md`, `README.zh.md`, or `dist/index.json`. The generator owns them. Product screenshots live in `docs/screenshots/` and are described in `docs/screenshots.json`.
 
 Descriptions and catalog data contributed here are released under CC0-1.0. Repository tooling is MIT-licensed.
