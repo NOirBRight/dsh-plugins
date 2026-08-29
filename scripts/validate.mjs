@@ -2,4 +2,4 @@
 import { loadEntries } from './catalog.mjs'
 
 const entries = loadEntries()
-console.log('catalog: ' + entries.length + ' plugin entries valid')
+console.log('catalog: ' + entries.length + ' entries valid')

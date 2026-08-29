@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "kind": "plugin",
   "id": "dsh-composer-picker",
   "packageName": "dsh-composer-picker",
   "repository": "NOirBRight/dsh-composer-picker",

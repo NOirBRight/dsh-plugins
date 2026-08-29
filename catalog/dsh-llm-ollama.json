@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "kind": "plugin",
   "id": "dsh-llm-ollama",
   "packageName": "dsh-llm-ollama",
   "repository": "NOirBRight/dsh-llm-ollama",

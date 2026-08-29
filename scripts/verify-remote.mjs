@@ -25,19 +25,29 @@ for (const entry of loadEntries()) {
   try {
     const [repository, tags, manifestText] = await Promise.all([
       json('https://api.github.com/repos/' + entry.repository),
-      json('https://api.github.com/repos/' + entry.repository + '/tags?per_page=1'),
+      json('https://api.github.com/repos/' + entry.repository + '/tags?per_page=100'),
       text('https://raw.githubusercontent.com/' + entry.repository + '/' + entry.commit + '/package.json'),
     ])
-    const latest = tags[0]
+    const tag = tags.find(candidate => candidate.name === entry.tag)
     const manifest = JSON.parse(manifestText)
     if (repository.visibility !== 'public' || repository.private) throw new Error('repository is not public')
     if (repository.archived) throw new Error('repository is archived')
-    if (latest?.name !== entry.tag) throw new Error('latest tag is ' + (latest?.name ?? '<missing>') + ', catalog has ' + entry.tag)
-    if (latest?.commit?.sha !== entry.commit) throw new Error('latest tag commit is ' + (latest?.commit?.sha ?? '<missing>') + ', catalog has ' + entry.commit)
+    if (tag === undefined) throw new Error('catalog tag is missing from GitHub')
+    if (tag.commit.sha !== entry.commit) throw new Error('tag commit is ' + tag.commit.sha + ', catalog has ' + entry.commit)
     if (manifest.name !== entry.packageName) throw new Error('package name is ' + manifest.name + ', catalog has ' + entry.packageName)
-    if (manifest.version !== entry.version) throw new Error('package version is ' + manifest.version + ', catalog has ' + entry.version)
-    if (manifest.license !== 'MIT') throw new Error('package license is ' + (manifest.license ?? '<missing>') + ', expected MIT')
-    if (typeof manifest.dsh?.bundle?.patch !== 'string') throw new Error('package does not declare dsh.bundle.patch')
+
+    if (entry.kind === 'plugin') {
+      if (tags[0]?.name !== entry.tag) throw new Error('latest tag is ' + (tags[0]?.name ?? '<missing>') + ', catalog has ' + entry.tag)
+      if (manifest.version !== entry.version) throw new Error('package version is ' + manifest.version + ', catalog has ' + entry.version)
+      if (manifest.license !== 'MIT') throw new Error('package license is ' + (manifest.license ?? '<missing>') + ', expected MIT')
+      if (typeof manifest.dsh?.bundle?.patch !== 'string') throw new Error('package does not declare dsh.bundle.patch')
+    } else {
+      const release = await json('https://api.github.com/repos/' + entry.repository + '/releases/tags/' + entry.tag)
+      const asset = release.assets.find(candidate => candidate.name === entry.artifact.name)
+      if (asset === undefined) throw new Error('release does not contain ' + entry.artifact.name)
+      if (asset.browser_download_url !== entry.artifact.downloadUrl) throw new Error('release artifact URL drifted')
+      if (entry.license === 'NOASSERTION' && manifest.license !== undefined) throw new Error('source now declares a license; update the catalog')
+    }
     console.log('remote: ' + entry.id + '@' + entry.version + ' verified')
   } catch (error) {
     failures.push(entry.id + ': ' + error.message)

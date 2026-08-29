@@ -1,11 +1,11 @@
 # Contributing
 
-This repository catalogs DSH plugins published by [NOirBRight](https://github.com/NOirBRight). It does not accept unrelated third-party plugin submissions; use [Awesome DSH Plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) for the community-wide directory.
+This repository catalogs DSH plugins and the mobile companion published by [NOirBRight](https://github.com/NOirBRight). It does not accept unrelated third-party plugin submissions; use [Awesome DSH Plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) for the community-wide directory.
 
 ## Update an entry
 
-1. Publish an immutable tag in the plugin repository.
-2. Update the matching `catalog/<id>.json` version, tag, full commit SHA, descriptions, compatibility, lifecycle status, and factual disclosure flags.
+1. Publish an immutable tag in the source repository and attach any declared application artifact.
+2. Update the matching `catalog/<id>.json` version, kind, tag, full commit SHA, descriptions, compatibility, lifecycle status, factual disclosure flags, and application artifact metadata when applicable.
 3. Run `npm run generate`.
 4. Run `npm test` and `GITHUB_TOKEN="$(gh auth token)" npm run verify:remote` (or provide another read-only GitHub token).
 5. Commit the catalog source and generated files together.

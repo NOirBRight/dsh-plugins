@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "kind": "plugin",
   "id": "dsh-codex-sidebar",
   "packageName": "dsh-codex-sidebar",
   "repository": "NOirBRight/dsh-codex-sidebar",

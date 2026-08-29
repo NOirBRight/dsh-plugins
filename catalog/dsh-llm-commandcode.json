@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "kind": "plugin",
   "id": "dsh-llm-commandcode",
   "packageName": "dsh-llm-commandcode",
   "repository": "NOirBRight/dsh-llm-commandcode",

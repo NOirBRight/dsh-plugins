@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "kind": "plugin",
   "id": "dsh-usage-monitor",
   "packageName": "dsh-usage-monitor",
   "repository": "NOirBRight/dsh-usage-monitor",

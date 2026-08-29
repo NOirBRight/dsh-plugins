@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "kind": "plugin",
   "id": "dsh-llm-assistant",
   "packageName": "dsh-llm-assistant",
   "repository": "NOirBRight/dsh-llm-assistant",

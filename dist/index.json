@@ -10,6 +10,7 @@
   },
   "plugins": [
     {
+      "kind": "plugin",
       "id": "dsh-llm-codex",
       "packageName": "dsh-llm-codex",
       "repository": "NOirBRight/dsh-llm-codex",
@@ -38,6 +39,7 @@
       ]
     },
     {
+      "kind": "plugin",
       "id": "dsh-llm-commandcode",
       "packageName": "dsh-llm-commandcode",
       "repository": "NOirBRight/dsh-llm-commandcode",
@@ -70,6 +72,7 @@
       }
     },
     {
+      "kind": "plugin",
       "id": "dsh-llm-cursor",
       "packageName": "dsh-llm-cursor",
       "repository": "NOirBRight/dsh-llm-cursor",
@@ -104,6 +107,7 @@
       }
     },
     {
+      "kind": "plugin",
       "id": "dsh-llm-grok",
       "packageName": "dsh-llm-grok",
       "repository": "NOirBRight/dsh-llm-grok",
@@ -132,6 +136,7 @@
       ]
     },
     {
+      "kind": "plugin",
       "id": "dsh-llm-ollama",
       "packageName": "dsh-llm-ollama",
       "repository": "NOirBRight/dsh-llm-ollama",
@@ -158,6 +163,7 @@
       ]
     },
     {
+      "kind": "plugin",
       "id": "dsh-llm-opencode-go",
       "packageName": "dsh-llm-opencode-go",
       "repository": "NOirBRight/dsh-llm-opencode-go",
@@ -185,6 +191,7 @@
       ]
     },
     {
+      "kind": "plugin",
       "id": "dsh-codex-sidebar",
       "packageName": "dsh-codex-sidebar",
       "repository": "NOirBRight/dsh-codex-sidebar",
@@ -212,6 +219,7 @@
       ]
     },
     {
+      "kind": "plugin",
       "id": "dsh-composer-picker",
       "packageName": "dsh-composer-picker",
       "repository": "NOirBRight/dsh-composer-picker",
@@ -240,6 +248,7 @@
       }
     },
     {
+      "kind": "plugin",
       "id": "dsh-model-switch",
       "packageName": "dsh-model-switch",
       "repository": "NOirBRight/dsh-model-switch",
@@ -264,6 +273,7 @@
       ]
     },
     {
+      "kind": "plugin",
       "id": "dsh-llm-assistant",
       "packageName": "dsh-llm-assistant",
       "repository": "NOirBRight/dsh-llm-assistant",
@@ -290,6 +300,7 @@
       ]
     },
     {
+      "kind": "plugin",
       "id": "dsh-mobile-pairing",
       "packageName": "@dsh-mobile/pairing",
       "repository": "NOirBRight/dsh-mobile-pairing",
@@ -316,6 +327,7 @@
       ]
     },
     {
+      "kind": "plugin",
       "id": "dsh-usage-monitor",
       "packageName": "dsh-usage-monitor",
       "repository": "NOirBRight/dsh-usage-monitor",
@@ -339,6 +351,42 @@
         "session-data",
         "ui-extension"
       ]
+    }
+  ],
+  "companionApps": [
+    {
+      "kind": "companion-app",
+      "id": "dsh-mobile",
+      "packageName": "dsh-mobile",
+      "repository": "NOirBRight/dsh-mobile",
+      "url": "https://github.com/NOirBRight/dsh-mobile",
+      "category": "remote",
+      "version": "1.1.1-test.20260824.9",
+      "tag": "mobile-picker-fix-0.1.14",
+      "commit": "3d65ddb28d57d3c3eb5f68c1f5ba532405961d1b",
+      "install": "adb install -r app-release.apk",
+      "license": "NOASSERTION",
+      "profiles": [],
+      "dshCompatibility": ">=0.1.0-rc.6",
+      "status": "active",
+      "descriptions": {
+        "en": "Android companion for your own DSH Host with QR pairing, end-to-end encrypted tunnel transport, official features, and a mobile layout.",
+        "zh": "连接自有 DSH Host 的 Android 配套应用，提供扫码配对、端到端加密隧道、官方功能和手机布局。"
+      },
+      "policyFlags": [
+        "credentials",
+        "network",
+        "remote-access"
+      ],
+      "artifact": {
+        "name": "app-release.apk",
+        "downloadUrl": "https://github.com/NOirBRight/dsh-mobile/releases/download/mobile-picker-fix-0.1.14/app-release.apk",
+        "sha256": "e06f26e03bda6a6c3a2c3b15d437e8169b177e78a1119a1ee607e0c239fed4b7"
+      },
+      "notice": {
+        "en": "Requires dsh-mobile-pairing on the Host. This latest stable patch release reports Android versionName 1.1.1-test.20260824.9. The source repository currently has no root license declaration.",
+        "zh": "需要在 Host 安装 dsh-mobile-pairing。该最新稳定补丁版的 Android versionName 为 1.1.1-test.20260824.9；源码仓库目前没有根许可证声明。"
+      }
     }
   ]
 }

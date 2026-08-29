@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "kind": "plugin",
   "id": "dsh-mobile-pairing",
   "packageName": "@dsh-mobile/pairing",
   "repository": "NOirBRight/dsh-mobile-pairing",

@@ -1,6 +1,6 @@
 # Security policy
 
-This repository is a catalog. It does not redistribute or execute the listed plugins.
+This repository is a catalog. It does not redistribute or execute the listed plugins or companion application.
 
 ## Report a catalog problem
 
@@ -12,4 +12,4 @@ A credible urgent report may move an entry to `quarantined` before the underlyin
 
 ## Plugin vulnerabilities
 
-Report implementation vulnerabilities to the affected plugin repository. The catalog's inclusion and disclosure fields are not a security review, certification, warranty, or endorsement.
+Report implementation vulnerabilities to the affected plugin or companion-application repository. The catalog's inclusion and disclosure fields are not a security review, certification, warranty, or endorsement.

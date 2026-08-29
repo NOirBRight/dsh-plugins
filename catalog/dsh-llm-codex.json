@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "kind": "plugin",
   "id": "dsh-llm-codex",
   "packageName": "dsh-llm-codex",
   "repository": "NOirBRight/dsh-llm-codex",

@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "kind": "plugin",
   "id": "dsh-llm-opencode-go",
   "packageName": "dsh-llm-opencode-go",
   "repository": "NOirBRight/dsh-llm-opencode-go",
