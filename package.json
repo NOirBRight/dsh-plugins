@@ -1,0 +1,17 @@
+{
+  "name": "@noirbright/dsh-plugins-directory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Machine-readable catalog of DSH plugins published by NOirBRight",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "check": "node scripts/validate.mjs && node scripts/generate.mjs --check",
+    "test": "node --test tests/*.test.mjs && npm run check",
+    "verify:remote": "node scripts/verify-remote.mjs"
+  }
+}

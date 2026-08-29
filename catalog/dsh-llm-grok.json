@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "dsh-llm-grok",
+  "packageName": "dsh-llm-grok",
+  "repository": "NOirBRight/dsh-llm-grok",
+  "category": "models",
+  "version": "0.3.4",
+  "tag": "v0.3.4",
+  "commit": "a2cbc51a67e111048e5879baf324f30b4183ba4e",
+  "license": "MIT",
+  "profiles": [
+    "web"
+  ],
+  "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+  "status": "active",
+  "descriptions": {
+    "en": "xAI Grok subscription login and Responses chat with configurable models, usage reporting, server-side search, and Imagine generation.",
+    "zh": "xAI Grok 订阅登录与 Responses 聊天，提供可配置模型、用量展示、服务端搜索和 Imagine 生图。"
+  },
+  "policyFlags": [
+    "credentials",
+    "network",
+    "oauth",
+    "third-party-service",
+    "third-party-subscription"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "dsh-codex-sidebar",
+  "packageName": "dsh-codex-sidebar",
+  "repository": "NOirBRight/dsh-codex-sidebar",
+  "category": "interface",
+  "version": "0.5.0",
+  "tag": "v0.5.0",
+  "commit": "acc02767af1075f4aabe6116cd1d8633e9a36d82",
+  "license": "MIT",
+  "profiles": [
+    "web"
+  ],
+  "dshCompatibility": "=0.1.2-alpha.1",
+  "status": "active",
+  "descriptions": {
+    "en": "Codex-style right sidebar for one DSH session, with Files, Review, Browser, and Terminal sharing a single tab strip.",
+    "zh": "为一条 DSH 主会话提供 Codex 风格右侧栏，Files、Review、Browser 与 Terminal 共用标签栏。"
+  },
+  "policyFlags": [
+    "browser-automation",
+    "network",
+    "subprocess",
+    "ui-extension"
+  ]
+}
