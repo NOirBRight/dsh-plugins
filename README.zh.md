@@ -51,7 +51,7 @@
 - **[dsh-llm-commandcode](https://github.com/NOirBRight/dsh-llm-commandcode)** — 聊天使用文档化 Provider API；可选额度展示还会读取官方 CLI 使用的非公开账户接口。
 - **[dsh-llm-cursor](https://github.com/NOirBRight/dsh-llm-cursor)** — Cursor 员工认定此类私有客户端访问违反其服务条款。仅安装、登录或发送聊天就可能导致账号受限或封禁。
 - **[dsh-composer-picker](https://github.com/NOirBRight/dsh-composer-picker)** — 该插件已并入 dsh-model-switch。请勿同时安装，两者会竞争同一个选择器位置。
-- **[dsh-mobile](https://github.com/NOirBRight/dsh-mobile)** — 需要在 Host 安装 dsh-mobile-pairing。该最新稳定补丁版的 Android versionName 为 1.1.1-test.20260824.9；源码仓库目前没有根许可证声明。
+- **[dsh-mobile](https://github.com/NOirBRight/dsh-mobile)** — 需要在 Host 安装 dsh-mobile-pairing。该最新稳定补丁版的 Android versionName 为 1.1.1-test.20260824.9。
 
 ## 安装
 

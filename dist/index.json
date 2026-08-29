@@ -365,7 +365,7 @@
       "tag": "mobile-picker-fix-0.1.14",
       "commit": "3d65ddb28d57d3c3eb5f68c1f5ba532405961d1b",
       "install": "adb install -r app-release.apk",
-      "license": "NOASSERTION",
+      "license": "MIT",
       "profiles": [],
       "dshCompatibility": ">=0.1.0-rc.6",
       "status": "active",
@@ -384,8 +384,8 @@
         "sha256": "e06f26e03bda6a6c3a2c3b15d437e8169b177e78a1119a1ee607e0c239fed4b7"
       },
       "notice": {
-        "en": "Requires dsh-mobile-pairing on the Host. This latest stable patch release reports Android versionName 1.1.1-test.20260824.9. The source repository currently has no root license declaration.",
-        "zh": "需要在 Host 安装 dsh-mobile-pairing。该最新稳定补丁版的 Android versionName 为 1.1.1-test.20260824.9；源码仓库目前没有根许可证声明。"
+        "en": "Requires dsh-mobile-pairing on the Host. This latest stable patch release reports Android versionName 1.1.1-test.20260824.9.",
+        "zh": "需要在 Host 安装 dsh-mobile-pairing。该最新稳定补丁版的 Android versionName 为 1.1.1-test.20260824.9。"
       }
     }
   ]

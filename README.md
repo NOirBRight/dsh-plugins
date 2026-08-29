@@ -51,7 +51,7 @@ An independent, machine-readable catalog of DSH plugins and the mobile companion
 - **[dsh-llm-commandcode](https://github.com/NOirBRight/dsh-llm-commandcode)** — Chat uses the documented Provider API; optional quota reporting also reads unofficial account routes used by the official CLI.
 - **[dsh-llm-cursor](https://github.com/NOirBRight/dsh-llm-cursor)** — Cursor staff treat this private-client access as against their Terms of Service. The account can be restricted or banned merely by installing, signing in, or sending chat.
 - **[dsh-composer-picker](https://github.com/NOirBRight/dsh-composer-picker)** — This plugin has been absorbed by dsh-model-switch. Do not install both because they compete for the same picker seat.
-- **[dsh-mobile](https://github.com/NOirBRight/dsh-mobile)** — Requires dsh-mobile-pairing on the Host. This latest stable patch release reports Android versionName 1.1.1-test.20260824.9. The source repository currently has no root license declaration.
+- **[dsh-mobile](https://github.com/NOirBRight/dsh-mobile)** — Requires dsh-mobile-pairing on the Host. This latest stable patch release reports Android versionName 1.1.1-test.20260824.9.
 
 ## Install
 

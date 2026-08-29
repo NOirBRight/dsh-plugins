@@ -42,11 +42,17 @@ for (const entry of loadEntries()) {
       if (manifest.license !== 'MIT') throw new Error('package license is ' + (manifest.license ?? '<missing>') + ', expected MIT')
       if (typeof manifest.dsh?.bundle?.patch !== 'string') throw new Error('package does not declare dsh.bundle.patch')
     } else {
-      const release = await json('https://api.github.com/repos/' + entry.repository + '/releases/tags/' + entry.tag)
+      const [release, currentManifestText, licenseText] = await Promise.all([
+        json('https://api.github.com/repos/' + entry.repository + '/releases/tags/' + entry.tag),
+        text('https://raw.githubusercontent.com/' + entry.repository + '/' + repository.default_branch + '/package.json'),
+        text('https://raw.githubusercontent.com/' + entry.repository + '/' + repository.default_branch + '/LICENSE'),
+      ])
       const asset = release.assets.find(candidate => candidate.name === entry.artifact.name)
+      const currentManifest = JSON.parse(currentManifestText)
       if (asset === undefined) throw new Error('release does not contain ' + entry.artifact.name)
       if (asset.browser_download_url !== entry.artifact.downloadUrl) throw new Error('release artifact URL drifted')
-      if (entry.license === 'NOASSERTION' && manifest.license !== undefined) throw new Error('source now declares a license; update the catalog')
+      if (currentManifest.license !== entry.license) throw new Error('default-branch license is ' + (currentManifest.license ?? '<missing>') + ', catalog has ' + entry.license)
+      if (!licenseText.startsWith('MIT License')) throw new Error('default branch does not carry the MIT license text')
     }
     console.log('remote: ' + entry.id + '@' + entry.version + ' verified')
   } catch (error) {
