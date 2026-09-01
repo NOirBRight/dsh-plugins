@@ -5,9 +5,9 @@
   "packageName": "dsh-llm-ollama",
   "repository": "NOirBRight/dsh-llm-ollama",
   "category": "models",
-  "version": "0.6.12",
-  "tag": "v0.6.12",
-  "commit": "094b3a3529901a801c9cb2e1ac2a157cc201a5e0",
+  "version": "0.6.15",
+  "tag": "v0.6.15",
+  "commit": "c7ddb509b2a1cf63cb9f9d5ea9a751bd31844385",
   "license": "MIT",
   "profiles": [
     "web"
@@ -22,5 +22,17 @@
     "credentials",
     "network",
     "third-party-service"
-  ]
+  ],
+  "dependencies": {
+    "required": [
+      "dsh-llm-providers-ui"
+    ]
+  },
+  "release": {
+    "asset": "dsh-llm-ollama.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-ollama/releases/latest/download/dsh-llm-ollama.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.15/dsh-llm-ollama.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.15/SHA256SUMS",
+    "sha256": "1a1bc49f5646f2b870367898b6832e4ebcd7859219ae8bb369fb344f8c0e6dd2"
+  }
 }

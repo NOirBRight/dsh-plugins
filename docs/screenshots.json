@@ -18,6 +18,7 @@
         }
       },
       "pluginIds": [
+        "dsh-llm-providers-ui",
         "dsh-llm-cursor",
         "dsh-llm-grok",
         "dsh-llm-codex",

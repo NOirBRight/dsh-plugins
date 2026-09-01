@@ -5,9 +5,9 @@
   "packageName": "dsh-llm-grok",
   "repository": "NOirBRight/dsh-llm-grok",
   "category": "models",
-  "version": "0.3.4",
-  "tag": "v0.3.4",
-  "commit": "a2cbc51a67e111048e5879baf324f30b4183ba4e",
+  "version": "0.3.7",
+  "tag": "v0.3.7",
+  "commit": "e2b8944947920312a6b75cbb5b7cdc57ee08ad68",
   "license": "MIT",
   "profiles": [
     "web"
@@ -24,5 +24,17 @@
     "oauth",
     "third-party-service",
     "third-party-subscription"
-  ]
+  ],
+  "dependencies": {
+    "required": [
+      "dsh-llm-providers-ui"
+    ]
+  },
+  "release": {
+    "asset": "dsh-llm-grok.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-grok/releases/latest/download/dsh-llm-grok.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.7/dsh-llm-grok.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.7/SHA256SUMS",
+    "sha256": "581fdba8615d490b9eb7028585362417747afe08b4c00b26d033b7e92b995b0c"
+  }
 }

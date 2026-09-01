@@ -148,9 +148,72 @@
           "type": "string",
           "pattern": "^https://github.com/NOirBRight/"
         },
+        "latestUrl": {
+          "type": "string",
+          "pattern": "^https://github.com/NOirBRight/.+/releases/latest/download/"
+        },
+        "sha256Url": {
+          "type": "string",
+          "pattern": "^https://github.com/NOirBRight/.+/releases/download/"
+        },
         "sha256": {
           "type": "string",
           "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "asset",
+        "latestUrl",
+        "fixedUrl",
+        "sha256",
+        "sha256Url"
+      ],
+      "properties": {
+        "asset": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9._-]+\\.tgz$"
+        },
+        "latestUrl": {
+          "type": "string",
+          "pattern": "^https://github.com/NOirBRight/.+/releases/latest/download/"
+        },
+        "fixedUrl": {
+          "type": "string",
+          "pattern": "^https://github.com/NOirBRight/.+/releases/download/v"
+        },
+        "sha256Url": {
+          "type": "string",
+          "pattern": "^https://github.com/NOirBRight/.+/releases/download/v.+/SHA256SUMS$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "required": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "optional": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
         }
       }
     },

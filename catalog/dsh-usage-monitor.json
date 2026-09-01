@@ -5,9 +5,9 @@
   "packageName": "dsh-usage-monitor",
   "repository": "NOirBRight/dsh-usage-monitor",
   "category": "observability",
-  "version": "0.2.6",
-  "tag": "v0.2.6",
-  "commit": "2e228cb3efbdac85d7bdcbba24fc05231f159419",
+  "version": "0.2.9",
+  "tag": "v0.2.9",
+  "commit": "bfa09817b781b5d4b9491762e7c9b007f20b3d36",
   "license": "MIT",
   "profiles": [
     "web"
@@ -21,5 +21,12 @@
   "policyFlags": [
     "session-data",
     "ui-extension"
-  ]
+  ],
+  "release": {
+    "asset": "dsh-usage-monitor.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-usage-monitor/releases/latest/download/dsh-usage-monitor.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.9/dsh-usage-monitor.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.9/SHA256SUMS",
+    "sha256": "bd2856dd660bcbcfa1a2323e6d3e2feb8c355523812c8cbac624caa14f6d876d"
+  }
 }

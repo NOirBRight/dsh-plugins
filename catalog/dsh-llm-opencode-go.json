@@ -5,9 +5,9 @@
   "packageName": "dsh-llm-opencode-go",
   "repository": "NOirBRight/dsh-llm-opencode-go",
   "category": "models",
-  "version": "0.1.13",
-  "tag": "v0.1.13",
-  "commit": "6c9ea8ea106912c27792c6722433787c57335ed1",
+  "version": "0.1.16",
+  "tag": "v0.1.16",
+  "commit": "a06ff75fd2cb202bfee50bc4164cc2481150611b",
   "license": "MIT",
   "profiles": [
     "web"
@@ -23,5 +23,17 @@
     "network",
     "third-party-service",
     "third-party-subscription"
-  ]
+  ],
+  "dependencies": {
+    "required": [
+      "dsh-llm-providers-ui"
+    ]
+  },
+  "release": {
+    "asset": "dsh-llm-opencode-go.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/latest/download/dsh-llm-opencode-go.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.16/dsh-llm-opencode-go.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.16/SHA256SUMS",
+    "sha256": "1504e2509258cefa7de7ffc8075ffdc7ae717aa900cf787ac70c552c096d5180"
+  }
 }

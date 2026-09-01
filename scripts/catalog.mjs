@@ -23,7 +23,7 @@ const REQUIRED_KEYS = [
   'schemaVersion', 'kind', 'id', 'packageName', 'repository', 'category', 'version', 'tag',
   'commit', 'license', 'profiles', 'dshCompatibility', 'status', 'descriptions', 'policyFlags',
 ]
-const ALLOWED_KEYS = new Set([...REQUIRED_KEYS, 'artifact', 'notice'])
+const ALLOWED_KEYS = new Set([...REQUIRED_KEYS, 'artifact', 'dependencies', 'notice', 'release'])
 const CATEGORY_LABELS = {
   en: { models: 'Models & Providers', interface: 'Interface', assistant: 'Assistant', remote: 'Remote Access', observability: 'Usage & Observability' },
   zh: { models: '模型与 Provider', interface: '界面', assistant: '助手', remote: '远程访问', observability: '用量与可观测性' },
@@ -75,7 +75,34 @@ export function validateEntry(entry, filename = '<entry>') {
   if (!object(entry.descriptions) || typeof entry.descriptions.en !== 'string' || entry.descriptions.en.length < 20 || typeof entry.descriptions.zh !== 'string' || entry.descriptions.zh.length < 8) fail(filename, 'descriptions.en and descriptions.zh are required')
   if (!Array.isArray(entry.policyFlags) || new Set(entry.policyFlags).size !== entry.policyFlags.length || entry.policyFlags.some(flag => !POLICY_FLAGS.includes(flag))) fail(filename, 'policyFlags contain an unknown or duplicate value')
   if (entry.kind === 'companion-app' && (!object(entry.artifact) || typeof entry.artifact.name !== 'string' || typeof entry.artifact.downloadUrl !== 'string' || !/^[0-9a-f]{64}$/.test(entry.artifact.sha256))) fail(filename, 'companion apps require an artifact name, URL, and SHA-256')
+  if (entry.artifact !== undefined) {
+    if (!object(entry.artifact)) fail(filename, 'artifact must be an object')
+    for (const key of Object.keys(entry.artifact)) if (!['name', 'downloadUrl', 'latestUrl', 'sha256Url', 'sha256'].includes(key)) fail(filename, 'artifact has unknown field ' + key)
+    for (const key of ['latestUrl', 'sha256Url']) if (entry.artifact[key] !== undefined && typeof entry.artifact[key] !== 'string') fail(filename, 'artifact.' + key + ' must be a string')
+  }
   if (entry.kind === 'plugin' && entry.artifact !== undefined) fail(filename, 'plugins cannot declare a companion artifact')
+  if (entry.release !== undefined) {
+    if (entry.kind !== 'plugin') fail(filename, 'only plugins can declare release metadata')
+    if (!object(entry.release)) fail(filename, 'release must be an object')
+    for (const key of ['asset', 'latestUrl', 'fixedUrl', 'sha256Url', 'sha256']) if (typeof entry.release[key] !== 'string') fail(filename, 'release.' + key + ' is required')
+    if (!/^[A-Za-z0-9._-]+\.tgz$/.test(entry.release.asset)) fail(filename, 'release.asset must be a .tgz file')
+    if (!/^https:\/\/github\.com\/NOirBRight\/[^/]+\/releases\/latest\/download\//.test(entry.release.latestUrl)) fail(filename, 'release.latestUrl must use GitHub latest download')
+    if (!/^https:\/\/github\.com\/NOirBRight\/[^/]+\/releases\/download\/v/.test(entry.release.fixedUrl)) fail(filename, 'release.fixedUrl must use a versioned GitHub release')
+    if (!/^https:\/\/github\.com\/NOirBRight\/[^/]+\/releases\/download\/v.+\/SHA256SUMS$/.test(entry.release.sha256Url)) fail(filename, 'release.sha256Url must point to SHA256SUMS')
+    if (!/^[0-9a-f]{64}$/.test(entry.release.sha256)) fail(filename, 'release.sha256 must be lowercase SHA-256')
+    if (!entry.release.latestUrl.endsWith('/' + entry.release.asset) || !entry.release.fixedUrl.endsWith('/' + entry.release.asset)) fail(filename, 'release URLs must use release.asset')
+    if (!entry.release.sha256Url.includes('/v' + entry.version + '/')) fail(filename, 'release.sha256Url must use the catalog version')
+  }
+  if (entry.dependencies !== undefined) {
+    if (!object(entry.dependencies)) fail(filename, 'dependencies must be an object')
+    for (const key of Object.keys(entry.dependencies)) if (!['required', 'optional'].includes(key)) fail(filename, 'dependencies has unknown field ' + key)
+    for (const key of ['required', 'optional']) {
+      const values = entry.dependencies[key]
+      if (values !== undefined && (!Array.isArray(values) || new Set(values).size !== values.length || values.some(value => typeof value !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value)))) fail(filename, 'dependencies.' + key + ' must be unique kebab-case ids')
+    }
+    const required = new Set(entry.dependencies.required ?? [])
+    if ((entry.dependencies.optional ?? []).some(value => required.has(value))) fail(filename, 'a dependency cannot be both required and optional')
+  }
   if (entry.notice !== undefined && (!object(entry.notice) || typeof entry.notice.en !== 'string' || typeof entry.notice.zh !== 'string')) fail(filename, 'notice requires en and zh strings')
   return entry
 }
@@ -95,6 +122,13 @@ export function loadEntries(root = ROOT) {
     ids.add(entry.id)
     packages.add(entry.packageName)
   }
+  const knownIds = new Set(entries.map(entry => entry.id))
+  for (const entry of entries) {
+    for (const dependency of [...(entry.dependencies?.required ?? []), ...(entry.dependencies?.optional ?? [])]) {
+      if (!knownIds.has(dependency)) fail(entry.id, 'dependency does not name a catalog entry: ' + dependency)
+      if (dependency === entry.id) fail(entry.id, 'cannot depend on itself')
+    }
+  }
   return entries.sort((left, right) => {
     const category = CATEGORIES.indexOf(left.category) - CATEGORIES.indexOf(right.category)
     return category || left.id.localeCompare(right.id)
@@ -110,9 +144,20 @@ function policyLabels(entry, locale) {
   return entry.policyFlags.map(flag => FLAG_LABELS[locale][flag]).join(', ')
 }
 
-export function installCommand(entry) {
+export function installCommand(entry, channel = 'fixed') {
   if (entry.kind === 'companion-app') return 'adb install -r ' + entry.artifact.name
-  return 'dsh plugin --profile ' + entry.profiles[0] + ' add github:' + entry.repository + '#' + entry.commit
+  const url = entry.release?.[channel === 'latest' ? 'latestUrl' : 'fixedUrl']
+  if (url !== undefined) return 'dsh plugin --profile ' + entry.profiles[0] + ' add --force ' + url
+  return 'dsh plugin --profile ' + entry.profiles[0] + ' add --force github:' + entry.repository + '#' + entry.commit
+}
+
+export function installCommands(entry, channel = 'fixed', entries = loadEntries()) {
+  const byId = new Map(entries.map(candidate => [candidate.id, candidate]))
+  const dependencies = entry.dependencies?.required ?? []
+  return [
+    ...dependencies.map(id => byId.get(id)).filter(candidate => candidate !== undefined).map(candidate => installCommand(candidate, channel)),
+    installCommand(entry, channel),
+  ]
 }
 
 export function renderIndex(entries) {
@@ -131,12 +176,16 @@ export function renderIndex(entries) {
       tag: entry.tag,
       commit: entry.commit,
       install: installCommand(entry),
+      installLatest: installCommands(entry, 'latest', entries),
+      installFixed: installCommands(entry, 'fixed', entries),
       license: entry.license,
       profiles: entry.profiles,
       dshCompatibility: entry.dshCompatibility,
       status: entry.status,
       descriptions: entry.descriptions,
       policyFlags: entry.policyFlags,
+      ...(entry.dependencies === undefined ? {} : { dependencies: entry.dependencies }),
+      ...(entry.release === undefined ? {} : { release: entry.release }),
       ...(entry.notice === undefined ? {} : { notice: entry.notice }),
     })),
     companionApps: entries.filter(entry => entry.kind === 'companion-app').map(entry => ({
@@ -150,12 +199,15 @@ export function renderIndex(entries) {
       tag: entry.tag,
       commit: entry.commit,
       install: installCommand(entry),
+      installLatest: installCommands(entry, 'latest', entries),
+      installFixed: installCommands(entry, 'fixed', entries),
       license: entry.license,
       profiles: entry.profiles,
       dshCompatibility: entry.dshCompatibility,
       status: entry.status,
       descriptions: entry.descriptions,
       policyFlags: entry.policyFlags,
+      ...(entry.dependencies === undefined ? {} : { dependencies: entry.dependencies }),
       artifact: entry.artifact,
       ...(entry.notice === undefined ? {} : { notice: entry.notice }),
     })),
@@ -175,8 +227,8 @@ export function renderReadme(entries, locale) {
       : '[NOirBRight](https://github.com/NOirBRight) 发布的 DSH 插件及手机配套应用独立机器可读目录。本项目与 DeepSeek 及各条目所涉及的第三方服务商无隶属关系，也不代表其认可或背书。',
     '',
     en
-      ? '> **Security:** DSH plugins and companion apps execute code with user-granted permissions and may handle files, credentials, session data, or network access. Review the source and disclosure flags before installing. Plugin commands pin immutable commits; application downloads include SHA-256.'
-      : '> **安全提示：** DSH 插件及配套应用以用户授予的权限执行代码，可能处理文件、凭据、会话数据或网络访问。安装前请审查源码及披露标记。插件命令固定不可变 commit，应用下载提供 SHA-256。',
+      ? '> **Security:** DSH plugins and companion apps execute code with user-granted permissions and may handle files, credentials, session data, or network access. Review the source and disclosure flags before installing. Latest URLs follow release assets; fixed URLs and SHA-256 are provided for reproducible installs.'
+      : '> **安全提示：** DSH 插件及配套应用以用户授予的权限执行代码，可能处理文件、凭据、会话数据或网络访问。安装前请审查源码及披露标记。Latest URL 跟随正式资产，同时提供固定版本 URL 和 SHA-256 以便可复现安装。',
     '',
     en ? '## Catalog' : '## 目录',
     '',
@@ -221,17 +273,20 @@ export function renderReadme(entries, locale) {
     lines.push('')
   }
   lines.push(en ? '## Install' : '## 安装', '')
-  lines.push(en ? 'Use the pinned command from [dist/index.json](dist/index.json). For example:' : '使用 [dist/index.json](dist/index.json) 中固定 commit 的命令。例如：')
-  lines.push('', '    ' + installCommand(entries[0]), '')
+  const installable = entries.find(entry => entry.kind === 'plugin' && entry.release !== undefined) ?? entries.find(entry => entry.kind === 'plugin')
+  lines.push(en ? 'Use the Latest command from [dist/index.json](dist/index.json) for routine updates. Use the fixed command when a deployment must be reproducible. Providers that depend on the shared UI owner list both commands in dependency order:' : '日常更新请使用 [dist/index.json](dist/index.json) 中的 Latest 命令；需要可复现部署时使用固定版本命令。依赖共享 UI Owner 的 Provider 会按依赖顺序列出两条命令：')
+  if (installable !== undefined) {
+    lines.push('', en ? '**Latest:**' : '**Latest：**', '', ...installCommands(installable, 'latest', entries).map(command => '    ' + command), '', en ? '**Fixed:**' : '**固定版本：**', '', ...installCommands(installable, 'fixed', entries).map(command => '    ' + command), '')
+  }
   lines.push(en
-    ? 'GitHub installs may run package build scripts outside the agent sandbox. A pinned commit prevents later branch changes from silently changing the installed code, but it does not make the code safe.'
-    : '从 GitHub 安装时，包构建脚本可能在 agent 沙箱之外执行。固定 commit 可避免分支后续变化静默替换安装代码，但不代表代码本身安全。')
+    ? 'Latest URLs never require editing a version number. Fixed URLs point to a signed release tag. GitHub package build scripts may execute outside the agent sandbox, so review source and SHA256SUMS before installing.'
+    : 'Latest URL 永远不需要手工修改版本号；固定 URL 指向正式 release tag。GitHub 包构建脚本可能在 agent 沙箱之外执行，安装前请审查源码和 SHA256SUMS。')
   const companion = entries.find(entry => entry.kind === 'companion-app')
   if (companion !== undefined) {
     lines.push('', en ? '## Mobile app' : '## 手机应用', '')
     lines.push(en
-      ? '- [Download ' + companion.artifact.name + '](' + companion.artifact.downloadUrl + ')\n- SHA-256: ' + companion.artifact.sha256 + '\n- Host requirement: install dsh-mobile-pairing first.'
-      : '- [下载 ' + companion.artifact.name + '](' + companion.artifact.downloadUrl + ')\n- SHA-256：' + companion.artifact.sha256 + '\n- Host 要求：先安装 dsh-mobile-pairing。')
+      ? '- [Download latest ' + companion.artifact.name + '](' + (companion.artifact.latestUrl ?? companion.artifact.downloadUrl) + ')\n- [Download fixed ' + companion.artifact.name + '](' + companion.artifact.downloadUrl + ')\n- SHA-256: ' + companion.artifact.sha256 + '\n- Host requirement: install dsh-mobile-pairing first.'
+      : '- [下载最新版 ' + companion.artifact.name + '](' + (companion.artifact.latestUrl ?? companion.artifact.downloadUrl) + ')\n- [下载固定版 ' + companion.artifact.name + '](' + companion.artifact.downloadUrl + ')\n- SHA-256：' + companion.artifact.sha256 + '\n- Host 要求：先安装 dsh-mobile-pairing。')
   }
   lines.push('', en ? '## Data and maintenance' : '## 数据与维护', '')
   lines.push(en

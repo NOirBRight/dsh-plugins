@@ -41,6 +41,17 @@ for (const entry of loadEntries()) {
       if (manifest.version !== entry.version) throw new Error('package version is ' + manifest.version + ', catalog has ' + entry.version)
       if (manifest.license !== 'MIT') throw new Error('package license is ' + (manifest.license ?? '<missing>') + ', expected MIT')
       if (typeof manifest.dsh?.bundle?.patch !== 'string') throw new Error('package does not declare dsh.bundle.patch')
+      if (entry.release !== undefined) {
+        const release = await json('https://api.github.com/repos/' + entry.repository + '/releases/tags/' + entry.tag)
+        const asset = release.assets.find(candidate => candidate.name === entry.release.asset)
+        const sums = release.assets.find(candidate => candidate.name === 'SHA256SUMS')
+        if (asset === undefined) throw new Error('release does not contain ' + entry.release.asset)
+        if (asset.browser_download_url !== entry.release.fixedUrl) throw new Error('release asset URL drifted')
+        if (sums === undefined) throw new Error('release does not contain SHA256SUMS')
+        const sumsText = await text(sums.browser_download_url)
+        const line = sumsText.split(/\r?\n/u).find(value => value.trim().endsWith('  ' + entry.release.asset) || value.trim().endsWith(' *' + entry.release.asset))
+        if (line === undefined || !line.trim().startsWith(entry.release.sha256 + ' ')) throw new Error('SHA256SUMS does not match ' + entry.release.asset)
+      }
     } else {
       const [release, currentManifestText, licenseText] = await Promise.all([
         json('https://api.github.com/repos/' + entry.repository + '/releases/tags/' + entry.tag),
@@ -51,6 +62,14 @@ for (const entry of loadEntries()) {
       const currentManifest = JSON.parse(currentManifestText)
       if (asset === undefined) throw new Error('release does not contain ' + entry.artifact.name)
       if (asset.browser_download_url !== entry.artifact.downloadUrl) throw new Error('release artifact URL drifted')
+      if (entry.artifact.latestUrl !== undefined && entry.artifact.latestUrl !== 'https://github.com/' + entry.repository + '/releases/latest/download/' + entry.artifact.name) throw new Error('latest artifact URL drifted')
+      if (entry.artifact.sha256Url !== undefined) {
+        const sums = release.assets.find(candidate => candidate.name === 'SHA256SUMS')
+        if (sums === undefined) throw new Error('release does not contain SHA256SUMS')
+        const sumsText = await text(sums.browser_download_url)
+        const line = sumsText.split(/\r?\n/u).find(value => value.trim().endsWith('  ' + entry.artifact.name) || value.trim().endsWith(' *' + entry.artifact.name))
+        if (line === undefined || !line.trim().startsWith(entry.artifact.sha256 + ' ')) throw new Error('SHA256SUMS does not match ' + entry.artifact.name)
+      }
       if (currentManifest.license !== entry.license) throw new Error('default-branch license is ' + (currentManifest.license ?? '<missing>') + ', catalog has ' + entry.license)
       if (!licenseText.startsWith('MIT License')) throw new Error('default branch does not carry the MIT license text')
     }
