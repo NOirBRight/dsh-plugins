@@ -5,9 +5,9 @@
   "packageName": "dsh-codex-sidebar",
   "repository": "NOirBRight/dsh-codex-sidebar",
   "category": "interface",
-  "version": "0.5.0",
-  "tag": "v0.5.0",
-  "commit": "acc02767af1075f4aabe6116cd1d8633e9a36d82",
+  "version": "0.5.10",
+  "tag": "v0.5.10",
+  "commit": "c18b5a3490e61f25dba2762a8c1725d0ef71c483",
   "license": "MIT",
   "profiles": [
     "web"
@@ -23,5 +23,12 @@
     "network",
     "subprocess",
     "ui-extension"
-  ]
+  ],
+  "release": {
+    "asset": "dsh-codex-sidebar.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/latest/download/dsh-codex-sidebar.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.10/dsh-codex-sidebar.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.10/SHA256SUMS",
+    "sha256": "e4576302ad83352c716c73b144656893c56e69c278f0a2d9edcc700e388a5627"
+  }
 }

@@ -5,9 +5,9 @@
   "packageName": "dsh-model-switch",
   "repository": "NOirBRight/dsh-model-switch",
   "category": "interface",
-  "version": "0.4.1",
-  "tag": "v0.4.1",
-  "commit": "83d562568ba104c901e07ad21055b96bb99ce4c2",
+  "version": "0.4.4",
+  "tag": "v0.4.4",
+  "commit": "887f0085153f13c899b4df0b6f797f92c22b60aa",
   "license": "MIT",
   "profiles": [
     "web"
@@ -20,5 +20,12 @@
   },
   "policyFlags": [
     "ui-extension"
-  ]
+  ],
+  "release": {
+    "asset": "dsh-model-switch.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-model-switch/releases/latest/download/dsh-model-switch.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.4/dsh-model-switch.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.4/SHA256SUMS",
+    "sha256": "6f3ab2da2bee585ff6874a3af3993109036b5aa45abf223bba08ec4cc1558e97"
+  }
 }

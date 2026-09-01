@@ -1,6 +1,6 @@
 {
   "name": "@noirbright/dsh-plugins-directory",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Machine-readable catalog of DSH plugins and mobile companion published by NOirBRight",
   "type": "module",

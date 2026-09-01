@@ -5,9 +5,9 @@
   "packageName": "dsh-llm-codex",
   "repository": "NOirBRight/dsh-llm-codex",
   "category": "models",
-  "version": "0.3.4",
-  "tag": "v0.3.4",
-  "commit": "95aadccdb1222081d3bff702de3671216e8ddbd3",
+  "version": "0.3.7",
+  "tag": "v0.3.7",
+  "commit": "d5fc46a7759de413eb47e1028f99a3011dd9f1a2",
   "license": "MIT",
   "profiles": [
     "web"
@@ -24,5 +24,17 @@
     "oauth",
     "third-party-service",
     "third-party-subscription"
-  ]
+  ],
+  "dependencies": {
+    "required": [
+      "dsh-llm-providers-ui"
+    ]
+  },
+  "release": {
+    "asset": "dsh-llm-codex.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-codex/releases/latest/download/dsh-llm-codex.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.7/dsh-llm-codex.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.7/SHA256SUMS",
+    "sha256": "0a6650fd19e942ea48e61b52b3bbbead3d922c52ff71d13ecee72a7504dfc7f2"
+  }
 }

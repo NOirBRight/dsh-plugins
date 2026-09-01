@@ -5,9 +5,9 @@
   "packageName": "@dsh-mobile/pairing",
   "repository": "NOirBRight/dsh-mobile-pairing",
   "category": "remote",
-  "version": "0.1.10",
-  "tag": "v0.1.10",
-  "commit": "a73012a13d68cabfc3bee4d5472576194c53c406",
+  "version": "0.1.12",
+  "tag": "v0.1.12",
+  "commit": "01f052dc2e387e2c95905c801b6374024069daf3",
   "license": "MIT",
   "profiles": [
     "web"
@@ -22,5 +22,12 @@
     "credentials",
     "network",
     "remote-access"
-  ]
+  ],
+  "release": {
+    "asset": "dsh-mobile-pairing.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/latest/download/dsh-mobile-pairing.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.12/dsh-mobile-pairing.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.12/SHA256SUMS",
+    "sha256": "9791b27ec4d64fe9ef02c4d555f3a9840513a9e70985317423d371e72a77507e"
+  }
 }

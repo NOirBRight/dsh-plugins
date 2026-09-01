@@ -4,13 +4,13 @@ import { join } from 'node:path'
 import test from 'node:test'
 import { loadEntries, renderIndex, renderReadme, ROOT, validateEntry } from '../scripts/catalog.mjs'
 
-test('catalog contains twelve plugins and the mobile companion', () => {
+test('catalog contains the published plugins and mobile companion', () => {
   const entries = loadEntries()
-  assert.equal(entries.length, 13)
-  assert.equal(new Set(entries.map(entry => entry.repository)).size, 13)
-  assert.equal(entries.filter(entry => entry.kind === 'plugin').length, 12)
+  assert.equal(entries.length, 17)
+  assert.equal(new Set(entries.map(entry => entry.repository)).size, 17)
+  assert.equal(entries.filter(entry => entry.kind === 'plugin').length, 16)
   assert.equal(entries.filter(entry => entry.kind === 'companion-app').length, 1)
-  assert.equal(entries.filter(entry => entry.status === 'active').length, 12)
+  assert.equal(entries.filter(entry => entry.status === 'active').length, 16)
   assert.equal(entries.filter(entry => entry.status === 'deprecated').length, 1)
 })
 
@@ -27,7 +27,7 @@ test('high-impact disclosures remain explicit', () => {
   const index = JSON.parse(renderIndex(entries))
   assert.match(readme, /account can be restricted or banned/i)
   assert.match(readme, /Mobile app/)
-  assert.match(readme, /e06f26e03bda6a6c3a2c3b15d437e8169b177e78a1119a1ee607e0c239fed4b7/)
+  assert.match(readme, /fb85196cd11f5c718f4400a9295a4c856776c38767d31c7a71ed75276856fba6/)
   assert.match(readme, /What these plugins do/)
   assert.match(readme, /docs\/screenshots\/llm-providers.jpg/)
   assert.match(readme, /docs\/screenshots\/model-switch.jpg/)
@@ -35,8 +35,10 @@ test('high-impact disclosures remain explicit', () => {
   assert.match(readme, /docs\/screenshots\/composer-picker.jpg/)
   assert.match(readme, /docs\/screenshots\/mobile-remote.jpg/)
   assert.match(readme, /docs\/screenshots\/usage-monitor.jpg/)
-  assert.equal(index.plugins.length, 12)
+  assert.equal(index.plugins.length, 16)
   assert.equal(index.companionApps.length, 1)
+  assert.equal(index.plugins.find(entry => entry.id === 'dsh-llm-commandcode').installLatest.length, 2)
+  assert.match(index.plugins.find(entry => entry.id === 'dsh-llm-commandcode').installLatest[0], /dsh-llm-providers-ui/)
 })
 
 test('screenshot files exist for every README image', () => {

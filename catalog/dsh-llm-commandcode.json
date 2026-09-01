@@ -5,9 +5,9 @@
   "packageName": "dsh-llm-commandcode",
   "repository": "NOirBRight/dsh-llm-commandcode",
   "category": "models",
-  "version": "0.1.13",
-  "tag": "v0.1.13",
-  "commit": "a7c226da426fdfec1d9fc2fd097dd8a4dacc3f40",
+  "version": "0.1.16",
+  "tag": "v0.1.16",
+  "commit": "33940e04bf1cfca28cd8c7256971c60f5a7886ee",
   "license": "MIT",
   "profiles": [
     "web"
@@ -25,6 +25,18 @@
     "third-party-subscription",
     "unofficial-api"
   ],
+  "dependencies": {
+    "required": [
+      "dsh-llm-providers-ui"
+    ]
+  },
+  "release": {
+    "asset": "dsh-llm-commandcode.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.16/dsh-llm-commandcode.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.16/SHA256SUMS",
+    "sha256": "35b4f7b91d970801ce3417701e846ebfa13f2a6ebf6f4f753cba15f9c50cf0c8"
+  },
   "notice": {
     "en": "Chat uses the documented Provider API; optional quota reporting also reads unofficial account routes used by the official CLI.",
     "zh": "聊天使用文档化 Provider API；可选额度展示还会读取官方 CLI 使用的非公开账户接口。"

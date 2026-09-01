@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "id": "dsh-llm-providers-ui",
+  "packageName": "dsh-llm-providers-ui",
+  "repository": "NOirBRight/dsh-llm-providers-ui",
+  "category": "interface",
+  "version": "0.1.2",
+  "tag": "v0.1.2",
+  "commit": "2433677e32535daaac7ad1d6a8bab77c8c4fdffa",
+  "license": "MIT",
+  "profiles": [
+    "web"
+  ],
+  "dshCompatibility": "=0.1.2-alpha.1",
+  "status": "active",
+  "descriptions": {
+    "en": "Shared LLM Providers settings owner for provider cards, navigation, and persisted ordering across independent model plugins.",
+    "zh": "共享 LLM Providers 设置 Owner，统一管理 Provider 卡片、导航和独立模型插件之间的持久化排序。"
+  },
+  "policyFlags": [
+    "ui-extension"
+  ],
+  "release": {
+    "asset": "dsh-llm-providers-ui.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/dsh-llm-providers-ui.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/SHA256SUMS",
+    "sha256": "5ebf8ce3bded5f8ade3868b6f5f979c48ad663d3ae853228bbfa43646c82aa0c"
+  }
+}

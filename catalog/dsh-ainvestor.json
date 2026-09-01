@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "id": "dsh-ainvestor",
+  "packageName": "dsh-ainvestor",
+  "repository": "NOirBRight/dsh-ainvestor",
+  "category": "assistant",
+  "version": "0.1.0",
+  "tag": "v0.1.0",
+  "commit": "2b59ca901a27bc11bc5ab31fb5b456347915d899",
+  "license": "MIT",
+  "profiles": [
+    "web"
+  ],
+  "dshCompatibility": "=0.1.2-alpha.1",
+  "status": "active",
+  "descriptions": {
+    "en": "AiInvestor analysis copilot with A-share Chan theory, composite scoring, financials, and a local investment knowledge base exposed as Host tools.",
+    "zh": "AiInvestor 分析助手，以 Host 工具提供 A 股缠论、综合评分、财务数据和本地投资知识库。"
+  },
+  "policyFlags": [
+    "network",
+    "third-party-service",
+    "ui-extension"
+  ],
+  "release": {
+    "asset": "dsh-ainvestor.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-ainvestor/releases/latest/download/dsh-ainvestor.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.0/dsh-ainvestor.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.0/SHA256SUMS",
+    "sha256": "4f60f6a7465ff51479b89a1ca60f9b6afc16905ef629eda114629867cc3b1fbb"
+  }
+}
