@@ -120,7 +120,7 @@
       "category": "models",
       "version": "0.2.14",
       "tag": "v0.2.14",
-      "commit": "4962db24d8a21165a6ed821e52bc97c51d623bd7",
+      "commit": "af32e2fdbcd27bf2e3b9af509595beb865986ead",
       "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.14/dsh-llm-cursor.tgz",
       "installLatest": [
         "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui.tgz",
@@ -159,7 +159,7 @@
         "latestUrl": "https://github.com/NOirBRight/dsh-llm-cursor/releases/latest/download/dsh-llm-cursor.tgz",
         "fixedUrl": "https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.14/dsh-llm-cursor.tgz",
         "sha256Url": "https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.14/SHA256SUMS",
-        "sha256": "424cf46b392bdbcf285acc951efa9ba2e28b1f4c4e0780b5f68c6937a7bd3449"
+        "sha256": "11b6f643054e3530decfb14daa960799f90fda0422f3baa17684e60cd19331ed"
       },
       "notice": {
         "en": "Cursor staff treat this private-client access as against their Terms of Service. The account can be restricted or banned merely by installing, signing in, or sending chat.",
