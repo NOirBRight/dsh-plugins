@@ -5,14 +5,14 @@
   "packageName": "dsh-usage-monitor",
   "repository": "NOirBRight/dsh-usage-monitor",
   "category": "observability",
-  "version": "0.2.9",
-  "tag": "v0.2.9",
-  "commit": "bfa09817b781b5d4b9491762e7c9b007f20b3d36",
+  "version": "0.2.10",
+  "tag": "v0.2.10",
+  "commit": "c47a0a87c18440b823bfcf1106c2544bf526da05",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+  "dshCompatibility": "=0.1.2-alpha.4",
   "status": "active",
   "descriptions": {
     "en": "Session-log usage dashboard for tokens, requests, output, and cache-hit rates, grouped by provider, model, or workspace.",
@@ -23,10 +23,10 @@
     "ui-extension"
   ],
   "release": {
-    "asset": "dsh-usage-monitor.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-usage-monitor/releases/latest/download/dsh-usage-monitor.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.9/dsh-usage-monitor.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.9/SHA256SUMS",
-    "sha256": "bd2856dd660bcbcfa1a2323e6d3e2feb8c355523812c8cbac624caa14f6d876d"
+    "asset": "dsh-usage-monitor-0.2.10.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-usage-monitor/releases/latest/download/dsh-usage-monitor-0.2.10.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.10/dsh-usage-monitor-0.2.10.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.10/SHA256SUMS",
+    "sha256": "0dca37aa819fed543ee762779e34604c257b0ffff378220875709dd790993fa3"
   }
 }

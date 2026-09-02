@@ -13,7 +13,7 @@
     "web"
   ],
   "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
-  "status": "active",
+  "status": "quarantined",
   "descriptions": {
     "en": "Resident DeepSeek assistant seat with its own session history, reminders, handoffs, and on-demand read-only task reference.",
     "zh": "常驻 DeepSeek 助手席位，拥有独立会话历史、提醒、交接和按需只读任务引用。"
@@ -22,5 +22,9 @@
     "network",
     "session-data",
     "ui-extension"
-  ]
+  ],
+  "notice": {
+    "en": "Excluded from the Alpha.4 campaign because the current release has not completed the Alpha.4 migration and interaction validation. Keep using it only with its historical runtime-compatible release.",
+    "zh": "因当前版本尚未完成 Alpha.4 迁移和交互验收，本次不发布 Assistant。仅应在其历史兼容 Runtime 中继续使用。"
+  }
 }
