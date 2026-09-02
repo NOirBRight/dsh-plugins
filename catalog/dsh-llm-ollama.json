@@ -5,14 +5,14 @@
   "packageName": "dsh-llm-ollama",
   "repository": "NOirBRight/dsh-llm-ollama",
   "category": "models",
-  "version": "0.6.15",
-  "tag": "v0.6.15",
-  "commit": "c7ddb509b2a1cf63cb9f9d5ea9a751bd31844385",
+  "version": "0.6.16",
+  "tag": "v0.6.16",
+  "commit": "c87906386490ac9ec7ba94778b433ae442bb2f8a",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+  "dshCompatibility": "=0.1.2-alpha.4",
   "status": "active",
   "descriptions": {
     "en": "Ollama Cloud chat through the OpenAI-compatible adapter, plus native model discovery and Web Search and Fetch providers.",
@@ -29,10 +29,14 @@
     ]
   },
   "release": {
-    "asset": "dsh-llm-ollama.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-llm-ollama/releases/latest/download/dsh-llm-ollama.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.15/dsh-llm-ollama.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.15/SHA256SUMS",
-    "sha256": "1a1bc49f5646f2b870367898b6832e4ebcd7859219ae8bb369fb344f8c0e6dd2"
+    "asset": "dsh-llm-ollama-0.6.16.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-ollama/releases/latest/download/dsh-llm-ollama-0.6.16.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.16/dsh-llm-ollama-0.6.16.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.16/SHA256SUMS",
+    "sha256": "df4d662ad1420b1829e4edb81df0f8918c27d9a9e7f53fb89b9df8e995e6c08c"
+  },
+  "notice": {
+    "en": "Released and deployed on the Alpha.4 Host. The installed configuration and Settings load were verified; live discovery and chat are SKIP-QUOTA because the Ollama quota is exhausted.",
+    "zh": "已发布并部署到 Alpha.4 Host，已验证配置恢复和 Settings 加载；因 Ollama 额度耗尽，真实 discovery 和聊天记为 SKIP-QUOTA。"
   }
 }

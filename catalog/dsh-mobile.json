@@ -5,12 +5,12 @@
   "packageName": "dsh-mobile",
   "repository": "NOirBRight/dsh-mobile",
   "category": "remote",
-  "version": "1.1.3",
-  "tag": "v1.1.3",
-  "commit": "9bf6002dcbbfbf91c301c61402f224ad8f7d60d1",
+  "version": "1.1.4",
+  "tag": "v1.1.4",
+  "commit": "5eac5208ccda2eb4d38fa723ac65b4b2d3dd6117",
   "license": "MIT",
   "profiles": [],
-  "dshCompatibility": ">=0.1.0-rc.6",
+  "dshCompatibility": "=0.1.2-alpha.4",
   "status": "active",
   "descriptions": {
     "en": "Android companion for your own DSH Host with QR pairing, end-to-end encrypted tunnel transport, official features, and a mobile layout.",
@@ -27,14 +27,14 @@
     ]
   },
   "artifact": {
-    "name": "dsh-mobile.apk",
-    "downloadUrl": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.3/dsh-mobile.apk",
-    "latestUrl": "https://github.com/NOirBRight/dsh-mobile/releases/latest/download/dsh-mobile.apk",
-    "sha256Url": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.3/SHA256SUMS",
-    "sha256": "fb85196cd11f5c718f4400a9295a4c856776c38767d31c7a71ed75276856fba6"
+    "name": "dsh-mobile-1.1.4.apk",
+    "downloadUrl": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.4/dsh-mobile-1.1.4.apk",
+    "latestUrl": "https://github.com/NOirBRight/dsh-mobile/releases/latest/download/dsh-mobile-1.1.4.apk",
+    "sha256Url": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.4/SHA256SUMS",
+    "sha256": "05d0e9b8e5a02c85fc7d456ff3592c8de3379ba46e468d1a06834a18c534c4a7"
   },
   "notice": {
-    "en": "Requires dsh-mobile-pairing on the Host. The v1.1.3 release is a signed APK with the mobile layout and plugin settings surfaces.",
-    "zh": "需要在 Host 安装 dsh-mobile-pairing。v1.1.3 是带移动布局和插件设置界面的正式签名 APK。"
+    "en": "Requires dsh-mobile-pairing on the Host. The v1.1.4 release is a signed APK (versionCode 15) with the mobile layout and plugin settings surfaces.",
+    "zh": "需要在 Host 安装 dsh-mobile-pairing。v1.1.4 是 versionCode 15 的正式签名 APK，包含移动布局和插件设置界面。"
   }
 }

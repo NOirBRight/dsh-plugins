@@ -5,14 +5,14 @@
   "packageName": "dsh-codex-sidebar",
   "repository": "NOirBRight/dsh-codex-sidebar",
   "category": "interface",
-  "version": "0.5.10",
-  "tag": "v0.5.10",
-  "commit": "c18b5a3490e61f25dba2762a8c1725d0ef71c483",
+  "version": "0.5.11",
+  "tag": "v0.5.11",
+  "commit": "1440927f33cd8684f96b226318943ca6fd4bc27d",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": "=0.1.2-alpha.1",
+  "dshCompatibility": "=0.1.2-alpha.4",
   "status": "active",
   "descriptions": {
     "en": "Codex-style right sidebar for one DSH session, with Files, Review, Browser, and Terminal sharing a single tab strip.",
@@ -25,10 +25,10 @@
     "ui-extension"
   ],
   "release": {
-    "asset": "dsh-codex-sidebar.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/latest/download/dsh-codex-sidebar.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.10/dsh-codex-sidebar.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.10/SHA256SUMS",
-    "sha256": "e4576302ad83352c716c73b144656893c56e69c278f0a2d9edcc700e388a5627"
+    "asset": "dsh-codex-sidebar-0.5.11.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/latest/download/dsh-codex-sidebar-0.5.11.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.11/dsh-codex-sidebar-0.5.11.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.11/SHA256SUMS",
+    "sha256": "c8ab92b80719a94811ffd8c8c973ae6f0fc248bf5b828f1769612b5ba1020939"
   }
 }

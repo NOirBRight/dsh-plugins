@@ -13,7 +13,7 @@
     "web"
   ],
   "dshCompatibility": "=0.1.2-alpha.1",
-  "status": "active",
+  "status": "quarantined",
   "descriptions": {
     "en": "Pixel whale dashboard and touch remote for the AM01S USB sub-screen, showing DSH moods, sessions, approvals, and questions.",
     "zh": "AM01S USB 副屏上的像素鲸鱼看板与触控遥控器，显示 DSH 状态、会话、审批和问题。"
@@ -23,6 +23,10 @@
     "remote-access",
     "ui-extension"
   ],
+  "notice": {
+    "en": "Excluded from the Alpha.4 campaign because the current release has not completed the Alpha.4 migration and interaction validation. Keep using it only with its Alpha.1-compatible runtime.",
+    "zh": "因当前版本尚未完成 Alpha.4 迁移和交互验收，本次不发布 Buddy。仅应在其兼容 Alpha.1 的 Runtime 中继续使用。"
+  },
   "release": {
     "asset": "dsh-buddy.tgz",
     "latestUrl": "https://github.com/NOirBRight/dsh-buddy/releases/latest/download/dsh-buddy.tgz",

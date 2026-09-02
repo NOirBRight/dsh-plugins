@@ -16,23 +16,23 @@
       "repository": "NOirBRight/dsh-llm-codex",
       "url": "https://github.com/NOirBRight/dsh-llm-codex",
       "category": "models",
-      "version": "0.3.7",
-      "tag": "v0.3.7",
-      "commit": "d5fc46a7759de413eb47e1028f99a3011dd9f1a2",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.7/dsh-llm-codex.tgz",
+      "version": "0.3.8",
+      "tag": "v0.3.8",
+      "commit": "f9b86a7816607a5f94c1eac64c1d5fef2dcd7e0b",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.8/dsh-llm-codex-0.3.8.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-codex/releases/latest/download/dsh-llm-codex.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-codex/releases/latest/download/dsh-llm-codex-0.3.8.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.7/dsh-llm-codex.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.8/dsh-llm-codex-0.3.8.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "ChatGPT Codex subscription login, sortable model catalog, Fast and 1M variants, live usage limits, and optional search and image tools.",
@@ -51,11 +51,11 @@
         ]
       },
       "release": {
-        "asset": "dsh-llm-codex.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-llm-codex/releases/latest/download/dsh-llm-codex.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.7/dsh-llm-codex.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.7/SHA256SUMS",
-        "sha256": "0a6650fd19e942ea48e61b52b3bbbead3d922c52ff71d13ecee72a7504dfc7f2"
+        "asset": "dsh-llm-codex-0.3.8.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-llm-codex/releases/latest/download/dsh-llm-codex-0.3.8.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.8/dsh-llm-codex-0.3.8.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.8/SHA256SUMS",
+        "sha256": "f42962eed0517ec2f0345b65745a7e83d801b72388f1ced89bb4284620de3fa7"
       }
     },
     {
@@ -65,23 +65,23 @@
       "repository": "NOirBRight/dsh-llm-commandcode",
       "url": "https://github.com/NOirBRight/dsh-llm-commandcode",
       "category": "models",
-      "version": "0.1.16",
-      "tag": "v0.1.16",
-      "commit": "33940e04bf1cfca28cd8c7256971c60f5a7886ee",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.16/dsh-llm-commandcode.tgz",
+      "version": "0.1.17",
+      "tag": "v0.1.17",
+      "commit": "696af202359d267107af978020f4025dcb551947",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.17/dsh-llm-commandcode-0.1.17.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode-0.1.17.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.16/dsh-llm-commandcode.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.17/dsh-llm-commandcode-0.1.17.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "Command Code Provider API chat with Host-only model discovery, credential storage, and best-effort subscription usage reporting.",
@@ -100,11 +100,11 @@
         ]
       },
       "release": {
-        "asset": "dsh-llm-commandcode.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.16/dsh-llm-commandcode.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.16/SHA256SUMS",
-        "sha256": "35b4f7b91d970801ce3417701e846ebfa13f2a6ebf6f4f753cba15f9c50cf0c8"
+        "asset": "dsh-llm-commandcode-0.1.17.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode-0.1.17.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.17/dsh-llm-commandcode-0.1.17.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.17/SHA256SUMS",
+        "sha256": "fa21d9f31add7f6872bba5794fbc9e9fc3c2ff496d7024cda785fba6a4258c2e"
       },
       "notice": {
         "en": "Chat uses the documented Provider API; optional quota reporting also reads unofficial account routes used by the official CLI.",
@@ -118,23 +118,23 @@
       "repository": "NOirBRight/dsh-llm-cursor",
       "url": "https://github.com/NOirBRight/dsh-llm-cursor",
       "category": "models",
-      "version": "0.2.14",
-      "tag": "v0.2.14",
-      "commit": "af32e2fdbcd27bf2e3b9af509595beb865986ead",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.14/dsh-llm-cursor.tgz",
+      "version": "0.2.15",
+      "tag": "v0.2.15",
+      "commit": "70e7201ab16c0063bd9e7a87dc90d6d4477d171d",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.15/dsh-llm-cursor-0.2.15.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-cursor/releases/latest/download/dsh-llm-cursor.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-cursor/releases/latest/download/dsh-llm-cursor-0.2.15.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.14/dsh-llm-cursor.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.15/dsh-llm-cursor-0.2.15.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "Unofficial Cursor subscription login and chat with Host-owned PKCE credentials, model discovery, and subscription usage rails.",
@@ -155,11 +155,11 @@
         ]
       },
       "release": {
-        "asset": "dsh-llm-cursor.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-llm-cursor/releases/latest/download/dsh-llm-cursor.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.14/dsh-llm-cursor.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.14/SHA256SUMS",
-        "sha256": "11b6f643054e3530decfb14daa960799f90fda0422f3baa17684e60cd19331ed"
+        "asset": "dsh-llm-cursor-0.2.15.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-llm-cursor/releases/latest/download/dsh-llm-cursor-0.2.15.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.15/dsh-llm-cursor-0.2.15.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.15/SHA256SUMS",
+        "sha256": "68d0a38623528dbe2066b81edac3ef30537014dfd74f442a1cba2a19144c40e5"
       },
       "notice": {
         "en": "Cursor staff treat this private-client access as against their Terms of Service. The account can be restricted or banned merely by installing, signing in, or sending chat.",
@@ -173,23 +173,23 @@
       "repository": "NOirBRight/dsh-llm-grok",
       "url": "https://github.com/NOirBRight/dsh-llm-grok",
       "category": "models",
-      "version": "0.3.7",
-      "tag": "v0.3.7",
-      "commit": "e2b8944947920312a6b75cbb5b7cdc57ee08ad68",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.7/dsh-llm-grok.tgz",
+      "version": "0.3.8",
+      "tag": "v0.3.8",
+      "commit": "1c58b705c3554e962c93985fb61431314f704847",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.8/dsh-llm-grok-0.3.8.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-grok/releases/latest/download/dsh-llm-grok.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-grok/releases/latest/download/dsh-llm-grok-0.3.8.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.7/dsh-llm-grok.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.8/dsh-llm-grok-0.3.8.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "xAI Grok subscription login and Responses chat with configurable models, usage reporting, server-side search, and Imagine generation.",
@@ -208,11 +208,11 @@
         ]
       },
       "release": {
-        "asset": "dsh-llm-grok.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-llm-grok/releases/latest/download/dsh-llm-grok.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.7/dsh-llm-grok.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.7/SHA256SUMS",
-        "sha256": "581fdba8615d490b9eb7028585362417747afe08b4c00b26d033b7e92b995b0c"
+        "asset": "dsh-llm-grok-0.3.8.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-llm-grok/releases/latest/download/dsh-llm-grok-0.3.8.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.8/dsh-llm-grok-0.3.8.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.8/SHA256SUMS",
+        "sha256": "067cae3ffad11631efaea221da250b75dc0d0781f543d8ceea784909ed72b731"
       }
     },
     {
@@ -222,23 +222,23 @@
       "repository": "NOirBRight/dsh-llm-ollama",
       "url": "https://github.com/NOirBRight/dsh-llm-ollama",
       "category": "models",
-      "version": "0.6.15",
-      "tag": "v0.6.15",
-      "commit": "c7ddb509b2a1cf63cb9f9d5ea9a751bd31844385",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.15/dsh-llm-ollama.tgz",
+      "version": "0.6.16",
+      "tag": "v0.6.16",
+      "commit": "c87906386490ac9ec7ba94778b433ae442bb2f8a",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.16/dsh-llm-ollama-0.6.16.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-ollama/releases/latest/download/dsh-llm-ollama.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-ollama/releases/latest/download/dsh-llm-ollama-0.6.16.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.15/dsh-llm-ollama.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.16/dsh-llm-ollama-0.6.16.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "Ollama Cloud chat through the OpenAI-compatible adapter, plus native model discovery and Web Search and Fetch providers.",
@@ -255,11 +255,15 @@
         ]
       },
       "release": {
-        "asset": "dsh-llm-ollama.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-llm-ollama/releases/latest/download/dsh-llm-ollama.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.15/dsh-llm-ollama.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.15/SHA256SUMS",
-        "sha256": "1a1bc49f5646f2b870367898b6832e4ebcd7859219ae8bb369fb344f8c0e6dd2"
+        "asset": "dsh-llm-ollama-0.6.16.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-llm-ollama/releases/latest/download/dsh-llm-ollama-0.6.16.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.16/dsh-llm-ollama-0.6.16.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-llm-ollama/releases/download/v0.6.16/SHA256SUMS",
+        "sha256": "df4d662ad1420b1829e4edb81df0f8918c27d9a9e7f53fb89b9df8e995e6c08c"
+      },
+      "notice": {
+        "en": "Released and deployed on the Alpha.4 Host. The installed configuration and Settings load were verified; live discovery and chat are SKIP-QUOTA because the Ollama quota is exhausted.",
+        "zh": "已发布并部署到 Alpha.4 Host，已验证配置恢复和 Settings 加载；因 Ollama 额度耗尽，真实 discovery 和聊天记为 SKIP-QUOTA。"
       }
     },
     {
@@ -269,23 +273,23 @@
       "repository": "NOirBRight/dsh-llm-opencode-go",
       "url": "https://github.com/NOirBRight/dsh-llm-opencode-go",
       "category": "models",
-      "version": "0.1.16",
-      "tag": "v0.1.16",
-      "commit": "a06ff75fd2cb202bfee50bc4164cc2481150611b",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.16/dsh-llm-opencode-go.tgz",
+      "version": "0.1.17",
+      "tag": "v0.1.17",
+      "commit": "7567ba302514bc325bbdb1a1b3c3b0535b016672",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.17/dsh-llm-opencode-go-0.1.17.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/latest/download/dsh-llm-opencode-go.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/latest/download/dsh-llm-opencode-go-0.1.17.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/dsh-llm-providers-ui.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.16/dsh-llm-opencode-go.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.17/dsh-llm-opencode-go-0.1.17.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "OpenCode Go models with per-model Completions, Responses, or Anthropic Messages routing, discovery, and subscription usage.",
@@ -303,11 +307,11 @@
         ]
       },
       "release": {
-        "asset": "dsh-llm-opencode-go.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/latest/download/dsh-llm-opencode-go.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.16/dsh-llm-opencode-go.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.16/SHA256SUMS",
-        "sha256": "1504e2509258cefa7de7ffc8075ffdc7ae717aa900cf787ac70c552c096d5180"
+        "asset": "dsh-llm-opencode-go-0.1.17.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/latest/download/dsh-llm-opencode-go-0.1.17.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.17/dsh-llm-opencode-go-0.1.17.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.17/SHA256SUMS",
+        "sha256": "250312ca956a53fd5b43296ff95b6eb13259d1a35bf7abefb9b78828e34e5177"
       }
     },
     {
@@ -332,7 +336,7 @@
         "web"
       ],
       "dshCompatibility": "=0.1.2-alpha.1",
-      "status": "active",
+      "status": "quarantined",
       "descriptions": {
         "en": "Pixel whale dashboard and touch remote for the AM01S USB sub-screen, showing DSH moods, sessions, approvals, and questions.",
         "zh": "AM01S USB 副屏上的像素鲸鱼看板与触控遥控器，显示 DSH 状态、会话、审批和问题。"
@@ -348,6 +352,10 @@
         "fixedUrl": "https://github.com/NOirBRight/dsh-buddy/releases/download/v0.1.0/dsh-buddy.tgz",
         "sha256Url": "https://github.com/NOirBRight/dsh-buddy/releases/download/v0.1.0/SHA256SUMS",
         "sha256": "e95cee94450ef737be91c9365b791f59f63d5be2c2e67719ce965c79f57098fd"
+      },
+      "notice": {
+        "en": "Excluded from the Alpha.4 campaign because the current release has not completed the Alpha.4 migration and interaction validation. Keep using it only with its Alpha.1-compatible runtime.",
+        "zh": "因当前版本尚未完成 Alpha.4 迁移和交互验收，本次不发布 Buddy。仅应在其兼容 Alpha.1 的 Runtime 中继续使用。"
       }
     },
     {
@@ -357,21 +365,21 @@
       "repository": "NOirBRight/dsh-codex-sidebar",
       "url": "https://github.com/NOirBRight/dsh-codex-sidebar",
       "category": "interface",
-      "version": "0.5.10",
-      "tag": "v0.5.10",
-      "commit": "c18b5a3490e61f25dba2762a8c1725d0ef71c483",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.10/dsh-codex-sidebar.tgz",
+      "version": "0.5.11",
+      "tag": "v0.5.11",
+      "commit": "1440927f33cd8684f96b226318943ca6fd4bc27d",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.11/dsh-codex-sidebar-0.5.11.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-codex-sidebar/releases/latest/download/dsh-codex-sidebar.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-codex-sidebar/releases/latest/download/dsh-codex-sidebar-0.5.11.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.10/dsh-codex-sidebar.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.11/dsh-codex-sidebar-0.5.11.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": "=0.1.2-alpha.1",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "Codex-style right sidebar for one DSH session, with Files, Review, Browser, and Terminal sharing a single tab strip.",
@@ -384,11 +392,11 @@
         "ui-extension"
       ],
       "release": {
-        "asset": "dsh-codex-sidebar.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/latest/download/dsh-codex-sidebar.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.10/dsh-codex-sidebar.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.10/SHA256SUMS",
-        "sha256": "e4576302ad83352c716c73b144656893c56e69c278f0a2d9edcc700e388a5627"
+        "asset": "dsh-codex-sidebar-0.5.11.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/latest/download/dsh-codex-sidebar-0.5.11.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.11/dsh-codex-sidebar-0.5.11.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-codex-sidebar/releases/download/v0.5.11/SHA256SUMS",
+        "sha256": "c8ab92b80719a94811ffd8c8c973ae6f0fc248bf5b828f1769612b5ba1020939"
       }
     },
     {
@@ -433,21 +441,21 @@
       "repository": "NOirBRight/dsh-llm-providers-ui",
       "url": "https://github.com/NOirBRight/dsh-llm-providers-ui",
       "category": "interface",
-      "version": "0.1.2",
-      "tag": "v0.1.2",
-      "commit": "2433677e32535daaac7ad1d6a8bab77c8c4fdffa",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/dsh-llm-providers-ui.tgz",
+      "version": "0.1.3",
+      "tag": "v0.1.3",
+      "commit": "385cda3b14219ed7c730b8f07b5cbd7a3ecd4451",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/dsh-llm-providers-ui.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": "=0.1.2-alpha.1",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "Shared LLM Providers settings owner for provider cards, navigation, and persisted ordering across independent model plugins.",
@@ -457,11 +465,11 @@
         "ui-extension"
       ],
       "release": {
-        "asset": "dsh-llm-providers-ui.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/dsh-llm-providers-ui.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.2/SHA256SUMS",
-        "sha256": "5ebf8ce3bded5f8ade3868b6f5f979c48ad663d3ae853228bbfa43646c82aa0c"
+        "asset": "dsh-llm-providers-ui-0.1.3.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/SHA256SUMS",
+        "sha256": "751a669d5f66725bb3160beea4e607f13a5dd4797525931394bdfbc0676690b2"
       }
     },
     {
@@ -471,21 +479,21 @@
       "repository": "NOirBRight/dsh-model-switch",
       "url": "https://github.com/NOirBRight/dsh-model-switch",
       "category": "interface",
-      "version": "0.4.4",
-      "tag": "v0.4.4",
-      "commit": "887f0085153f13c899b4df0b6f797f92c22b60aa",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.4/dsh-model-switch.tgz",
+      "version": "0.4.5",
+      "tag": "v0.4.5",
+      "commit": "0d79be752434a1f1fa096514f550e3200df9e016",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.5/dsh-model-switch-0.4.5.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-model-switch/releases/latest/download/dsh-model-switch.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-model-switch/releases/latest/download/dsh-model-switch-0.4.5.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.4/dsh-model-switch.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.5/dsh-model-switch-0.4.5.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": ">=0.1.1-rc.2 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "Explicit routing for Main, Subagent, Composer, Plan Review, Web Search, and image generation without patching DSH Core.",
@@ -495,11 +503,11 @@
         "ui-extension"
       ],
       "release": {
-        "asset": "dsh-model-switch.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-model-switch/releases/latest/download/dsh-model-switch.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.4/dsh-model-switch.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.4/SHA256SUMS",
-        "sha256": "6f3ab2da2bee585ff6874a3af3993109036b5aa45abf223bba08ec4cc1558e97"
+        "asset": "dsh-model-switch-0.4.5.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-model-switch/releases/latest/download/dsh-model-switch-0.4.5.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.5/dsh-model-switch-0.4.5.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.5/SHA256SUMS",
+        "sha256": "a5e663996b9a69c74999d98004478933838fbc541b7ac760b29bff0e64926eae"
       }
     },
     {
@@ -509,21 +517,21 @@
       "repository": "NOirBRight/dsh-ainvestor",
       "url": "https://github.com/NOirBRight/dsh-ainvestor",
       "category": "assistant",
-      "version": "0.1.0",
-      "tag": "v0.1.0",
-      "commit": "2b59ca901a27bc11bc5ab31fb5b456347915d899",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.0/dsh-ainvestor.tgz",
+      "version": "0.1.1",
+      "tag": "v0.1.1",
+      "commit": "ce8db85b530c9348b8d8f59669ba81daee70626a",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.1/dsh-ainvestor-0.1.1.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ainvestor/releases/latest/download/dsh-ainvestor.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ainvestor/releases/latest/download/dsh-ainvestor-0.1.1.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.0/dsh-ainvestor.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.1/dsh-ainvestor-0.1.1.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": "=0.1.2-alpha.1",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "AiInvestor analysis copilot with A-share Chan theory, composite scoring, financials, and a local investment knowledge base exposed as Host tools.",
@@ -535,11 +543,11 @@
         "ui-extension"
       ],
       "release": {
-        "asset": "dsh-ainvestor.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-ainvestor/releases/latest/download/dsh-ainvestor.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.0/dsh-ainvestor.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.0/SHA256SUMS",
-        "sha256": "2d1cf992831de0e878d65ad6fb341ed0774ebbd13653fda4556af11cca5a9800"
+        "asset": "dsh-ainvestor-0.1.1.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-ainvestor/releases/latest/download/dsh-ainvestor-0.1.1.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.1/dsh-ainvestor-0.1.1.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.1/SHA256SUMS",
+        "sha256": "a0a8117106c10fd0ebf8e5eeafb2db58735995386d7312f210f93ea5844e92b9"
       }
     },
     {
@@ -549,21 +557,21 @@
       "repository": "NOirBRight/dsh-external-agents",
       "url": "https://github.com/NOirBRight/dsh-external-agents",
       "category": "assistant",
-      "version": "0.2.1",
-      "tag": "v0.2.1",
-      "commit": "3208fc3359a51ed2717f9e98a172881c5564935c",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.1/dsh-external-agents.tgz",
+      "version": "0.2.2",
+      "tag": "v0.2.2",
+      "commit": "2bb9226914bfa0577bc029d8e7a833e77777bce3",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.2/dsh-external-agents-0.2.2.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-external-agents/releases/latest/download/dsh-external-agents.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-external-agents/releases/latest/download/dsh-external-agents-0.2.2.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.1/dsh-external-agents.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.2/dsh-external-agents-0.2.2.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": "=0.1.2-alpha.1",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "External Agent control plane for Codex, Claude Code, Cursor Agent, and Antigravity adapters with settings and background job visibility.",
@@ -576,11 +584,11 @@
         "ui-extension"
       ],
       "release": {
-        "asset": "dsh-external-agents.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-external-agents/releases/latest/download/dsh-external-agents.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.1/dsh-external-agents.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.1/SHA256SUMS",
-        "sha256": "0835889dc3f5ec99178725533daa465854e01a78f61411054bd08cf6b02d3f13"
+        "asset": "dsh-external-agents-0.2.2.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-external-agents/releases/latest/download/dsh-external-agents-0.2.2.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.2/dsh-external-agents-0.2.2.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.2/SHA256SUMS",
+        "sha256": "ecd161e20cd1da9b44c440302a341926b31be7237a6d171b4a3792d821cd4bc5"
       }
     },
     {
@@ -605,7 +613,7 @@
         "web"
       ],
       "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
-      "status": "active",
+      "status": "quarantined",
       "descriptions": {
         "en": "Resident DeepSeek assistant seat with its own session history, reminders, handoffs, and on-demand read-only task reference.",
         "zh": "常驻 DeepSeek 助手席位，拥有独立会话历史、提醒、交接和按需只读任务引用。"
@@ -614,7 +622,54 @@
         "network",
         "session-data",
         "ui-extension"
-      ]
+      ],
+      "notice": {
+        "en": "Excluded from the Alpha.4 campaign because the current release has not completed the Alpha.4 migration and interaction validation. Keep using it only with its historical runtime-compatible release.",
+        "zh": "因当前版本尚未完成 Alpha.4 迁移和交互验收，本次不发布 Assistant。仅应在其历史兼容 Runtime 中继续使用。"
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "dsh-ponytail",
+      "packageName": "dsh-ponytail-skills",
+      "repository": "NOirBRight/dsh-ponytail",
+      "url": "https://github.com/NOirBRight/dsh-ponytail",
+      "category": "assistant",
+      "version": "0.2.1",
+      "tag": "v0.2.1",
+      "commit": "c781eaaaeef790ff073095512d6ae17bc393f0d6",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.1/dsh-ponytail-skills-0.2.1.tgz",
+      "installLatest": [
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ponytail/releases/latest/download/dsh-ponytail-skills-0.2.1.tgz"
+      ],
+      "installFixed": [
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.1/dsh-ponytail-skills-0.2.1.tgz"
+      ],
+      "license": "MIT",
+      "profiles": [
+        "web"
+      ],
+      "dshCompatibility": "=0.1.2-alpha.4",
+      "status": "active",
+      "descriptions": {
+        "en": "Ponytail session modes and review skills with persisted mode controls, Native Subagent inheritance, and compact runtime prompts.",
+        "zh": "Ponytail 会话模式与审查技能，提供模式持久化、Native Subagent 继承和精简运行时提示。"
+      },
+      "policyFlags": [
+        "session-data",
+        "ui-extension"
+      ],
+      "release": {
+        "asset": "dsh-ponytail-skills-0.2.1.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-ponytail/releases/latest/download/dsh-ponytail-skills-0.2.1.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.1/dsh-ponytail-skills-0.2.1.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.1/SHA256SUMS",
+        "sha256": "4d819f32c2da7b5169bb3f2e3cc4afaff58450091b7c70c12557b7c2798e0e40"
+      },
+      "notice": {
+        "en": "Newly deployed in the Alpha.4 campaign. Mode changes apply to new accepted steps and are recorded in the session log.",
+        "zh": "本次 Alpha.4 campaign 新增部署。模式变更在新的 accepted step 生效，并写入会话日志。"
+      }
     },
     {
       "kind": "plugin",
@@ -623,21 +678,21 @@
       "repository": "NOirBRight/dsh-mobile-pairing",
       "url": "https://github.com/NOirBRight/dsh-mobile-pairing",
       "category": "remote",
-      "version": "0.1.12",
-      "tag": "v0.1.12",
-      "commit": "01f052dc2e387e2c95905c801b6374024069daf3",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.12/dsh-mobile-pairing.tgz",
+      "version": "0.1.14",
+      "tag": "v0.1.14",
+      "commit": "58767dcf44a63ca194d22d6d8756ac19c5972815",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.14/dsh-mobile-pairing-0.1.14.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile-pairing/releases/latest/download/dsh-mobile-pairing.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile-pairing/releases/latest/download/dsh-mobile-pairing-0.1.14.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.12/dsh-mobile-pairing.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.14/dsh-mobile-pairing-0.1.14.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "DSH Mobile Host pairing with a loopback gateway, public endpoint discovery, WebRTC Direct, and encrypted tunnel fallback.",
@@ -649,11 +704,15 @@
         "remote-access"
       ],
       "release": {
-        "asset": "dsh-mobile-pairing.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/latest/download/dsh-mobile-pairing.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.12/dsh-mobile-pairing.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.12/SHA256SUMS",
-        "sha256": "9791b27ec4d64fe9ef02c4d555f3a9840513a9e70985317423d371e72a77507e"
+        "asset": "dsh-mobile-pairing-0.1.14.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/latest/download/dsh-mobile-pairing-0.1.14.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.14/dsh-mobile-pairing-0.1.14.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.14/SHA256SUMS",
+        "sha256": "ffcf9024ff37020fe29ea524781f9c7bc457e2adbc0427b364c3fded3d41a0a1"
+      },
+      "notice": {
+        "en": "The Alpha.4 release uses @dsh-mobile/e2e-tunnel v0.1.5. Existing device keys remain on the Host; QR, Direct, and Relay checks must be run against the paired mobile app.",
+        "zh": "Alpha.4 版本使用 @dsh-mobile/e2e-tunnel v0.1.5。Host 上的设备密钥会保留；二维码、Direct 和 Relay 检查需与已配对手机一起执行。"
       }
     },
     {
@@ -663,21 +722,21 @@
       "repository": "NOirBRight/dsh-usage-monitor",
       "url": "https://github.com/NOirBRight/dsh-usage-monitor",
       "category": "observability",
-      "version": "0.2.9",
-      "tag": "v0.2.9",
-      "commit": "bfa09817b781b5d4b9491762e7c9b007f20b3d36",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.9/dsh-usage-monitor.tgz",
+      "version": "0.2.10",
+      "tag": "v0.2.10",
+      "commit": "c47a0a87c18440b823bfcf1106c2544bf526da05",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.10/dsh-usage-monitor-0.2.10.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-usage-monitor/releases/latest/download/dsh-usage-monitor.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-usage-monitor/releases/latest/download/dsh-usage-monitor-0.2.10.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.9/dsh-usage-monitor.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.10/dsh-usage-monitor-0.2.10.tgz"
       ],
       "license": "MIT",
       "profiles": [
         "web"
       ],
-      "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "Session-log usage dashboard for tokens, requests, output, and cache-hit rates, grouped by provider, model, or workspace.",
@@ -688,11 +747,11 @@
         "ui-extension"
       ],
       "release": {
-        "asset": "dsh-usage-monitor.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-usage-monitor/releases/latest/download/dsh-usage-monitor.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.9/dsh-usage-monitor.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.9/SHA256SUMS",
-        "sha256": "bd2856dd660bcbcfa1a2323e6d3e2feb8c355523812c8cbac624caa14f6d876d"
+        "asset": "dsh-usage-monitor-0.2.10.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-usage-monitor/releases/latest/download/dsh-usage-monitor-0.2.10.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.10/dsh-usage-monitor-0.2.10.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-usage-monitor/releases/download/v0.2.10/SHA256SUMS",
+        "sha256": "0dca37aa819fed543ee762779e34604c257b0ffff378220875709dd790993fa3"
       }
     }
   ],
@@ -704,21 +763,21 @@
       "repository": "NOirBRight/dsh-mobile",
       "url": "https://github.com/NOirBRight/dsh-mobile",
       "category": "remote",
-      "version": "1.1.3",
-      "tag": "v1.1.3",
-      "commit": "9bf6002dcbbfbf91c301c61402f224ad8f7d60d1",
-      "install": "adb install -r dsh-mobile.apk",
+      "version": "1.1.4",
+      "tag": "v1.1.4",
+      "commit": "5eac5208ccda2eb4d38fa723ac65b4b2d3dd6117",
+      "install": "adb install -r dsh-mobile-1.1.4.apk",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile-pairing/releases/latest/download/dsh-mobile-pairing.tgz",
-        "adb install -r dsh-mobile.apk"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile-pairing/releases/latest/download/dsh-mobile-pairing-0.1.14.tgz",
+        "adb install -r dsh-mobile-1.1.4.apk"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.12/dsh-mobile-pairing.tgz",
-        "adb install -r dsh-mobile.apk"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.14/dsh-mobile-pairing-0.1.14.tgz",
+        "adb install -r dsh-mobile-1.1.4.apk"
       ],
       "license": "MIT",
       "profiles": [],
-      "dshCompatibility": ">=0.1.0-rc.6",
+      "dshCompatibility": "=0.1.2-alpha.4",
       "status": "active",
       "descriptions": {
         "en": "Android companion for your own DSH Host with QR pairing, end-to-end encrypted tunnel transport, official features, and a mobile layout.",
@@ -735,15 +794,15 @@
         ]
       },
       "artifact": {
-        "name": "dsh-mobile.apk",
-        "downloadUrl": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.3/dsh-mobile.apk",
-        "latestUrl": "https://github.com/NOirBRight/dsh-mobile/releases/latest/download/dsh-mobile.apk",
-        "sha256Url": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.3/SHA256SUMS",
-        "sha256": "fb85196cd11f5c718f4400a9295a4c856776c38767d31c7a71ed75276856fba6"
+        "name": "dsh-mobile-1.1.4.apk",
+        "downloadUrl": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.4/dsh-mobile-1.1.4.apk",
+        "latestUrl": "https://github.com/NOirBRight/dsh-mobile/releases/latest/download/dsh-mobile-1.1.4.apk",
+        "sha256Url": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.4/SHA256SUMS",
+        "sha256": "05d0e9b8e5a02c85fc7d456ff3592c8de3379ba46e468d1a06834a18c534c4a7"
       },
       "notice": {
-        "en": "Requires dsh-mobile-pairing on the Host. The v1.1.3 release is a signed APK with the mobile layout and plugin settings surfaces.",
-        "zh": "需要在 Host 安装 dsh-mobile-pairing。v1.1.3 是带移动布局和插件设置界面的正式签名 APK。"
+        "en": "Requires dsh-mobile-pairing on the Host. The v1.1.4 release is a signed APK (versionCode 15) with the mobile layout and plugin settings surfaces.",
+        "zh": "需要在 Host 安装 dsh-mobile-pairing。v1.1.4 是 versionCode 15 的正式签名 APK，包含移动布局和插件设置界面。"
       }
     }
   ]

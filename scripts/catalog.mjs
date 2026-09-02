@@ -230,6 +230,10 @@ export function renderReadme(entries, locale) {
       ? '> **Security:** DSH plugins and companion apps execute code with user-granted permissions and may handle files, credentials, session data, or network access. Review the source and disclosure flags before installing. Latest URLs follow release assets; fixed URLs and SHA-256 are provided for reproducible installs.'
       : '> **安全提示：** DSH 插件及配套应用以用户授予的权限执行代码，可能处理文件、凭据、会话数据或网络访问。安装前请审查源码及披露标记。Latest URL 跟随正式资产，同时提供固定版本 URL 和 SHA-256 以便可复现安装。',
     '',
+    en
+      ? '> **Alpha.4 compatibility:** Migration releases target DeepSeek Harness `0.1.2-alpha.4` with `@deepseek-ai/cordis@4.0.2` exactly and are not compatible with Alpha.1–Alpha.3. Users on older runtimes must keep the last plugin tag built for that runtime; do not install an Alpha.4 tarball into an older profile. See [the compatibility and rollback policy](docs/alpha4-release-compatibility.md) and [campaign evidence](docs/alpha4-campaign-evidence.md).'
+      : '> **Alpha.4 兼容性：** 迁移版本严格面向 DeepSeek Harness `0.1.2-alpha.4` 和 `@deepseek-ai/cordis@4.0.2`，不兼容 Alpha.1–Alpha.3。仍使用旧 Runtime 的用户应继续固定该 Runtime 对应的最后兼容插件 tag，不要把 Alpha.4 tarball 安装到旧 profile。详见[兼容性与回滚策略](docs/alpha4-release-compatibility.md)及[本次 campaign 验收记录](docs/alpha4-campaign-evidence.md)。',
+    '',
     en ? '## Catalog' : '## 目录',
     '',
   ]
@@ -272,6 +276,11 @@ export function renderReadme(entries, locale) {
     for (const entry of notices) lines.push('- **[' + entry.id + '](https://github.com/' + entry.repository + ')** — ' + entry.notice[locale])
     lines.push('')
   }
+  lines.push(en ? '## External upstream packages' : '## 外部上游包', '')
+  lines.push(en
+    ? '- [dshmarket 1.40.0](https://www.npmjs.com/package/dshmarket/v/1.40.0) is an upstream package from [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market), not published by this catalog. It was loaded and checked on the 3080 Alpha.4 profile; install it only as a controlled profile dependency.'
+    : '- [dshmarket 1.40.0](https://www.npmjs.com/package/dshmarket/v/1.40.0) 是 [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) 发布的外部上游包，不由本目录发布。它已在 3080 Alpha.4 profile 中加载并完成检查；仅应作为受控 profile 依赖安装。')
+  lines.push('')
   lines.push(en ? '## Install' : '## 安装', '')
   const installable = entries.find(entry => entry.kind === 'plugin' && entry.release !== undefined) ?? entries.find(entry => entry.kind === 'plugin')
   lines.push(en ? 'Use the Latest command from [dist/index.json](dist/index.json) for routine updates. Use the fixed command when a deployment must be reproducible. Providers that depend on the shared UI owner list both commands in dependency order:' : '日常更新请使用 [dist/index.json](dist/index.json) 中的 Latest 命令；需要可复现部署时使用固定版本命令。依赖共享 UI Owner 的 Provider 会按依赖顺序列出两条命令：')
@@ -279,8 +288,8 @@ export function renderReadme(entries, locale) {
     lines.push('', en ? '**Latest:**' : '**Latest：**', '', ...installCommands(installable, 'latest', entries).map(command => '    ' + command), '', en ? '**Fixed:**' : '**固定版本：**', '', ...installCommands(installable, 'fixed', entries).map(command => '    ' + command), '')
   }
   lines.push(en
-    ? 'Latest URLs never require editing a version number. Fixed URLs point to a signed release tag. GitHub package build scripts may execute outside the agent sandbox, so review source and SHA256SUMS before installing.'
-    : 'Latest URL 永远不需要手工修改版本号；固定 URL 指向正式 release tag。GitHub 包构建脚本可能在 agent 沙箱之外执行，安装前请审查源码和 SHA256SUMS。')
+    ? 'Latest URLs follow the current versioned release asset and are refreshed with each catalog release. Fixed URLs point to a signed release tag. GitHub package build scripts may execute outside the agent sandbox, so review source and SHA256SUMS before installing.'
+    : 'Latest URL 指向当前带版本号的正式资产，并会随 catalog release 一起更新；固定 URL 指向正式 release tag。GitHub 包构建脚本可能在 agent 沙箱之外执行，安装前请审查源码和 SHA256SUMS。')
   const companion = entries.find(entry => entry.kind === 'companion-app')
   if (companion !== undefined) {
     lines.push('', en ? '## Mobile app' : '## 手机应用', '')

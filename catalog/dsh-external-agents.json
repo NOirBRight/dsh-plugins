@@ -5,14 +5,14 @@
   "packageName": "dsh-external-agents",
   "repository": "NOirBRight/dsh-external-agents",
   "category": "assistant",
-  "version": "0.2.1",
-  "tag": "v0.2.1",
-  "commit": "3208fc3359a51ed2717f9e98a172881c5564935c",
+  "version": "0.2.2",
+  "tag": "v0.2.2",
+  "commit": "2bb9226914bfa0577bc029d8e7a833e77777bce3",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": "=0.1.2-alpha.1",
+  "dshCompatibility": "=0.1.2-alpha.4",
   "status": "active",
   "descriptions": {
     "en": "External Agent control plane for Codex, Claude Code, Cursor Agent, and Antigravity adapters with settings and background job visibility.",
@@ -25,10 +25,10 @@
     "ui-extension"
   ],
   "release": {
-    "asset": "dsh-external-agents.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-external-agents/releases/latest/download/dsh-external-agents.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.1/dsh-external-agents.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.1/SHA256SUMS",
-    "sha256": "0835889dc3f5ec99178725533daa465854e01a78f61411054bd08cf6b02d3f13"
+    "asset": "dsh-external-agents-0.2.2.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-external-agents/releases/latest/download/dsh-external-agents-0.2.2.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.2/dsh-external-agents-0.2.2.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-external-agents/releases/download/v0.2.2/SHA256SUMS",
+    "sha256": "ecd161e20cd1da9b44c440302a341926b31be7237a6d171b4a3792d821cd4bc5"
   }
 }

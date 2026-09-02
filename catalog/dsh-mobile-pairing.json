@@ -5,14 +5,14 @@
   "packageName": "@dsh-mobile/pairing",
   "repository": "NOirBRight/dsh-mobile-pairing",
   "category": "remote",
-  "version": "0.1.12",
-  "tag": "v0.1.12",
-  "commit": "01f052dc2e387e2c95905c801b6374024069daf3",
+  "version": "0.1.14",
+  "tag": "v0.1.14",
+  "commit": "58767dcf44a63ca194d22d6d8756ac19c5972815",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <1.0.0 || >=0.1.2-alpha.1 <1.0.0",
+  "dshCompatibility": "=0.1.2-alpha.4",
   "status": "active",
   "descriptions": {
     "en": "DSH Mobile Host pairing with a loopback gateway, public endpoint discovery, WebRTC Direct, and encrypted tunnel fallback.",
@@ -24,10 +24,14 @@
     "remote-access"
   ],
   "release": {
-    "asset": "dsh-mobile-pairing.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/latest/download/dsh-mobile-pairing.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.12/dsh-mobile-pairing.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.12/SHA256SUMS",
-    "sha256": "9791b27ec4d64fe9ef02c4d555f3a9840513a9e70985317423d371e72a77507e"
+    "asset": "dsh-mobile-pairing-0.1.14.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/latest/download/dsh-mobile-pairing-0.1.14.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.14/dsh-mobile-pairing-0.1.14.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/download/v0.1.14/SHA256SUMS",
+    "sha256": "ffcf9024ff37020fe29ea524781f9c7bc457e2adbc0427b364c3fded3d41a0a1"
+  },
+  "notice": {
+    "en": "The Alpha.4 release uses @dsh-mobile/e2e-tunnel v0.1.5. Existing device keys remain on the Host; QR, Direct, and Relay checks must be run against the paired mobile app.",
+    "zh": "Alpha.4 版本使用 @dsh-mobile/e2e-tunnel v0.1.5。Host 上的设备密钥会保留；二维码、Direct 和 Relay 检查需与已配对手机一起执行。"
   }
 }
