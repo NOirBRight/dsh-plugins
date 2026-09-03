@@ -5,14 +5,14 @@
   "packageName": "dsh-llm-grok",
   "repository": "NOirBRight/dsh-llm-grok",
   "category": "models",
-  "version": "0.3.8",
-  "tag": "v0.3.8",
-  "commit": "1c58b705c3554e962c93985fb61431314f704847",
+  "version": "0.3.9",
+  "tag": "v0.3.9",
+  "commit": "36fcc692beb73f1b4db8a834ff627c23150b9831",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": "=0.1.2-alpha.4",
+  "dshCompatibility": ">=0.1.2-alpha.4 <1.0.0 || 0.1.2-alpha.5 || 0.1.2-rc.1",
   "status": "active",
   "descriptions": {
     "en": "xAI Grok subscription login and Responses chat with configurable models, usage reporting, server-side search, and Imagine generation.",
@@ -31,10 +31,10 @@
     ]
   },
   "release": {
-    "asset": "dsh-llm-grok-0.3.8.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-llm-grok/releases/latest/download/dsh-llm-grok-0.3.8.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.8/dsh-llm-grok-0.3.8.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.8/SHA256SUMS",
-    "sha256": "067cae3ffad11631efaea221da250b75dc0d0781f543d8ceea784909ed72b731"
+    "asset": "dsh-llm-grok-0.3.9.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-grok/releases/latest/download/dsh-llm-grok-0.3.9.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.9/dsh-llm-grok-0.3.9.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-grok/releases/download/v0.3.9/SHA256SUMS",
+    "sha256": "cbb3affcf589c1f055bf093d9ccc77a56d5fbe68fc7b9e76a48c054a154d3a3f"
   }
 }

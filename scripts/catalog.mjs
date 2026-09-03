@@ -231,8 +231,8 @@ export function renderReadme(entries, locale) {
       : '> **安全提示：** DSH 插件及配套应用以用户授予的权限执行代码，可能处理文件、凭据、会话数据或网络访问。安装前请审查源码及披露标记。Latest URL 跟随正式资产，同时提供固定版本 URL 和 SHA-256 以便可复现安装。',
     '',
     en
-      ? '> **Alpha.4 compatibility:** Migration releases target DeepSeek Harness `0.1.2-alpha.4` with `@deepseek-ai/cordis@4.0.2` exactly and are not compatible with Alpha.1–Alpha.3. Users on older runtimes must keep the last plugin tag built for that runtime; do not install an Alpha.4 tarball into an older profile. See [the compatibility and rollback policy](docs/alpha4-release-compatibility.md) and [campaign evidence](docs/alpha4-campaign-evidence.md).'
-      : '> **Alpha.4 兼容性：** 迁移版本严格面向 DeepSeek Harness `0.1.2-alpha.4` 和 `@deepseek-ai/cordis@4.0.2`，不兼容 Alpha.1–Alpha.3。仍使用旧 Runtime 的用户应继续固定该 Runtime 对应的最后兼容插件 tag，不要把 Alpha.4 tarball 安装到旧 profile。详见[兼容性与回滚策略](docs/alpha4-release-compatibility.md)及[本次 campaign 验收记录](docs/alpha4-campaign-evidence.md)。',
+      ? '> **DSH compatibility:** These releases preserve the Alpha.4 floor and also accept the verified `0.1.2-rc.1` runtime with `@deepseek-ai/cordis >=4.0.2 <5.0.0`. Verified releases are evidence, not an allowlist: unknown runtimes warn once and are attempted, while only an explicitly reproduced failure is blocklisted and skipped. Keep older plugin tags on older profiles. See [the compatibility and rollback policy](docs/alpha4-release-compatibility.md) and [campaign evidence](docs/alpha4-campaign-evidence.md).'
+      : '> **DSH 兼容性：** 这些版本保留 Alpha.4 最低版本，同时接受已验证的 `0.1.2-rc.1` Runtime 和 `@deepseek-ai/cordis >=4.0.2 <5.0.0`。已验证版本是证据而非白名单：未知 Runtime 只告警一次并继续尝试，只有复现失败的版本才会加入阻断列表并跳过。旧 profile 继续固定旧插件 tag。详见[兼容性与回滚策略](docs/alpha4-release-compatibility.md)及[本次 campaign 验收记录](docs/alpha4-campaign-evidence.md)。',
     '',
     en ? '## Catalog' : '## 目录',
     '',

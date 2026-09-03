@@ -5,14 +5,14 @@
   "packageName": "dsh-llm-commandcode",
   "repository": "NOirBRight/dsh-llm-commandcode",
   "category": "models",
-  "version": "0.1.18",
-  "tag": "v0.1.18",
-  "commit": "58511e9ad9504242bab50cde4b7dcbc474b1e015",
+  "version": "0.1.19",
+  "tag": "v0.1.19",
+  "commit": "e567b4c191e7c087b7750dad9d7b82025554a7b4",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": "=0.1.2-alpha.4",
+  "dshCompatibility": ">=0.1.2-alpha.4 <1.0.0 || 0.1.2-alpha.5 || 0.1.2-rc.1",
   "status": "active",
   "descriptions": {
     "en": "Command Code Provider API chat with Host-only model discovery, credential storage, and best-effort subscription usage reporting.",
@@ -31,11 +31,11 @@
     ]
   },
   "release": {
-    "asset": "dsh-llm-commandcode-0.1.18.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode-0.1.18.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.18/dsh-llm-commandcode-0.1.18.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.18/SHA256SUMS",
-    "sha256": "9cb95ab5ccb6857441197bd31b42850826a611a98c267f624d977915cbd09061"
+    "asset": "dsh-llm-commandcode-0.1.19.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode-0.1.19.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.19/dsh-llm-commandcode-0.1.19.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.19/SHA256SUMS",
+    "sha256": "d885c7042cc2405919d5d722652dc7aa95f851ff5d12fd8ae99d0ee480b3e4fd"
   },
   "notice": {
     "en": "Chat uses the documented Provider API; optional quota reporting also reads unofficial account routes used by the official CLI.",

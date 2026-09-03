@@ -5,14 +5,14 @@
   "packageName": "dsh-llm-codex",
   "repository": "NOirBRight/dsh-llm-codex",
   "category": "models",
-  "version": "0.3.8",
-  "tag": "v0.3.8",
-  "commit": "f9b86a7816607a5f94c1eac64c1d5fef2dcd7e0b",
+  "version": "0.3.9",
+  "tag": "v0.3.9",
+  "commit": "7ca4e6c0d241d9d99394156aaf67523544c044f7",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": "=0.1.2-alpha.4",
+  "dshCompatibility": ">=0.1.2-alpha.4 <1.0.0 || 0.1.2-alpha.5 || 0.1.2-rc.1",
   "status": "active",
   "descriptions": {
     "en": "ChatGPT Codex subscription login, sortable model catalog, Fast and 1M variants, live usage limits, and optional search and image tools.",
@@ -31,10 +31,10 @@
     ]
   },
   "release": {
-    "asset": "dsh-llm-codex-0.3.8.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-llm-codex/releases/latest/download/dsh-llm-codex-0.3.8.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.8/dsh-llm-codex-0.3.8.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.8/SHA256SUMS",
-    "sha256": "f42962eed0517ec2f0345b65745a7e83d801b72388f1ced89bb4284620de3fa7"
+    "asset": "dsh-llm-codex-0.3.9.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-codex/releases/latest/download/dsh-llm-codex-0.3.9.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.9/dsh-llm-codex-0.3.9.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.9/SHA256SUMS",
+    "sha256": "4850f2182bba361bf5889de5445db612da7cabdbe663a3f1b6af1b9474a6f137"
   }
 }

@@ -5,14 +5,14 @@
   "packageName": "dsh-model-switch",
   "repository": "NOirBRight/dsh-model-switch",
   "category": "interface",
-  "version": "0.4.5",
-  "tag": "v0.4.5",
-  "commit": "0d79be752434a1f1fa096514f550e3200df9e016",
+  "version": "0.4.6",
+  "tag": "v0.4.6",
+  "commit": "6c7e15b0b1e52f20e3347febad53ecdac53fe043",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": "=0.1.2-alpha.4",
+  "dshCompatibility": ">=0.1.2-alpha.4 <1.0.0 || 0.1.2-alpha.5 || 0.1.2-rc.1",
   "status": "active",
   "descriptions": {
     "en": "Explicit routing for Main, Subagent, Composer, Plan Review, Web Search, and image generation without patching DSH Core.",
@@ -22,10 +22,10 @@
     "ui-extension"
   ],
   "release": {
-    "asset": "dsh-model-switch-0.4.5.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-model-switch/releases/latest/download/dsh-model-switch-0.4.5.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.5/dsh-model-switch-0.4.5.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.5/SHA256SUMS",
-    "sha256": "a5e663996b9a69c74999d98004478933838fbc541b7ac760b29bff0e64926eae"
+    "asset": "dsh-model-switch-0.4.6.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-model-switch/releases/latest/download/dsh-model-switch-0.4.6.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.6/dsh-model-switch-0.4.6.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-model-switch/releases/download/v0.4.6/SHA256SUMS",
+    "sha256": "25b014c9270fe1b704fc4f561e32fdfa90596b8d4875821d6856f700cb900fed"
   }
 }

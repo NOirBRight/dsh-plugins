@@ -5,14 +5,14 @@
   "packageName": "dsh-llm-opencode-go",
   "repository": "NOirBRight/dsh-llm-opencode-go",
   "category": "models",
-  "version": "0.1.18",
-  "tag": "v0.1.18",
-  "commit": "3c76af96a1a42b4953982d19eae19d68b3c69825",
+  "version": "0.1.19",
+  "tag": "v0.1.19",
+  "commit": "763046c5ea8ace05a782852a401423e3f81071dd",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": "=0.1.2-alpha.4",
+  "dshCompatibility": ">=0.1.2-alpha.4 <1.0.0 || 0.1.2-alpha.5 || 0.1.2-rc.1",
   "status": "active",
   "descriptions": {
     "en": "OpenCode Go models with per-model Completions, Responses, or Anthropic Messages routing, discovery, and subscription usage.",
@@ -30,10 +30,10 @@
     ]
   },
   "release": {
-    "asset": "dsh-llm-opencode-go-0.1.18.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/latest/download/dsh-llm-opencode-go-0.1.18.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.18/dsh-llm-opencode-go-0.1.18.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.18/SHA256SUMS",
-    "sha256": "3653e5a6fc1813a5eb17f3598ea620ad4afcf17fc065bb752c83e81d3c0a009a"
+    "asset": "dsh-llm-opencode-go-0.1.19.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/latest/download/dsh-llm-opencode-go-0.1.19.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.19/dsh-llm-opencode-go-0.1.19.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.19/SHA256SUMS",
+    "sha256": "f077d773bf6574c720be2cda531723047cd41041396878fccc5b08e19bae718d"
   }
 }

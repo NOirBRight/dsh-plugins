@@ -5,14 +5,14 @@
   "packageName": "dsh-ainvestor",
   "repository": "NOirBRight/dsh-ainvestor",
   "category": "assistant",
-  "version": "0.1.1",
-  "tag": "v0.1.1",
-  "commit": "ce8db85b530c9348b8d8f59669ba81daee70626a",
+  "version": "0.1.2",
+  "tag": "v0.1.2",
+  "commit": "2d299da52f2ffcf065b9369da2a909a422d0efe5",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": "=0.1.2-alpha.4",
+  "dshCompatibility": ">=0.1.2-alpha.4 <1.0.0 || 0.1.2-alpha.5 || 0.1.2-rc.1",
   "status": "active",
   "descriptions": {
     "en": "AiInvestor analysis copilot with A-share Chan theory, composite scoring, financials, and a local investment knowledge base exposed as Host tools.",
@@ -24,10 +24,10 @@
     "ui-extension"
   ],
   "release": {
-    "asset": "dsh-ainvestor-0.1.1.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-ainvestor/releases/latest/download/dsh-ainvestor-0.1.1.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.1/dsh-ainvestor-0.1.1.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.1/SHA256SUMS",
-    "sha256": "a0a8117106c10fd0ebf8e5eeafb2db58735995386d7312f210f93ea5844e92b9"
+    "asset": "dsh-ainvestor-0.1.2.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-ainvestor/releases/latest/download/dsh-ainvestor-0.1.2.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.2/dsh-ainvestor-0.1.2.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-ainvestor/releases/download/v0.1.2/SHA256SUMS",
+    "sha256": "68dfa27d800b2c65903f5271c9ffba6bc60117c3c492c9b76c5cfc4ff2b973df"
   }
 }
