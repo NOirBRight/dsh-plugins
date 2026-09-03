@@ -631,19 +631,19 @@
     {
       "kind": "plugin",
       "id": "dsh-ponytail",
-      "packageName": "dsh-ponytail-skills",
+      "packageName": "dsh-ponytail",
       "repository": "NOirBRight/dsh-ponytail",
       "url": "https://github.com/NOirBRight/dsh-ponytail",
       "category": "assistant",
-      "version": "0.2.1",
-      "tag": "v0.2.1",
-      "commit": "c781eaaaeef790ff073095512d6ae17bc393f0d6",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.1/dsh-ponytail-skills-0.2.1.tgz",
+      "version": "0.2.2",
+      "tag": "v0.2.2",
+      "commit": "2771408ae7b8ae4f2fa05baf5c50d20a759cc1a0",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.2/dsh-ponytail-0.2.2.tgz",
       "installLatest": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ponytail/releases/latest/download/dsh-ponytail-skills-0.2.1.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ponytail/releases/latest/download/dsh-ponytail-0.2.2.tgz"
       ],
       "installFixed": [
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.1/dsh-ponytail-skills-0.2.1.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.2/dsh-ponytail-0.2.2.tgz"
       ],
       "license": "MIT",
       "profiles": [
@@ -660,11 +660,11 @@
         "ui-extension"
       ],
       "release": {
-        "asset": "dsh-ponytail-skills-0.2.1.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-ponytail/releases/latest/download/dsh-ponytail-skills-0.2.1.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.1/dsh-ponytail-skills-0.2.1.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.1/SHA256SUMS",
-        "sha256": "4d819f32c2da7b5169bb3f2e3cc4afaff58450091b7c70c12557b7c2798e0e40"
+        "asset": "dsh-ponytail-0.2.2.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-ponytail/releases/latest/download/dsh-ponytail-0.2.2.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.2/dsh-ponytail-0.2.2.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.2/SHA256SUMS",
+        "sha256": "eeec13d79f3ed9ed654635cda40da03426ea99f19f23562da57a42a4de23bd0d"
       },
       "notice": {
         "en": "Newly deployed in the Alpha.4 campaign. Mode changes apply to new accepted steps and are recorded in the session log.",

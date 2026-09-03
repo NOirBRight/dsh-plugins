@@ -38,7 +38,7 @@ An independent, machine-readable catalog of DSH plugins and the mobile companion
 | [dsh-ainvestor](https://github.com/NOirBRight/dsh-ainvestor) | Plugin | [v0.1.1](https://github.com/NOirBRight/dsh-ainvestor/tree/v0.1.1) | Active | AiInvestor analysis copilot with A-share Chan theory, composite scoring, financials, and a local investment knowledge base exposed as Host tools. | Network, Third-party service, UI extension |
 | [dsh-external-agents](https://github.com/NOirBRight/dsh-external-agents) | Plugin | [v0.2.2](https://github.com/NOirBRight/dsh-external-agents/tree/v0.2.2) | Active | External Agent control plane for Codex, Claude Code, Cursor Agent, and Antigravity adapters with settings and background job visibility. | Credentials, Network, Subprocess, UI extension |
 | [dsh-llm-assistant](https://github.com/NOirBRight/dsh-llm-assistant) | Plugin | [v0.1.5](https://github.com/NOirBRight/dsh-llm-assistant/tree/v0.1.5) | Quarantined | Resident DeepSeek assistant seat with its own session history, reminders, handoffs, and on-demand read-only task reference. | Network, Session data, UI extension |
-| [dsh-ponytail](https://github.com/NOirBRight/dsh-ponytail) | Plugin | [v0.2.1](https://github.com/NOirBRight/dsh-ponytail/tree/v0.2.1) | Active | Ponytail session modes and review skills with persisted mode controls, Native Subagent inheritance, and compact runtime prompts. | Session data, UI extension |
+| [dsh-ponytail](https://github.com/NOirBRight/dsh-ponytail) | Plugin | [v0.2.2](https://github.com/NOirBRight/dsh-ponytail/tree/v0.2.2) | Active | Ponytail session modes and review skills with persisted mode controls, Native Subagent inheritance, and compact runtime prompts. | Session data, UI extension |
 
 ### Remote Access
 

@@ -38,7 +38,7 @@
 | [dsh-ainvestor](https://github.com/NOirBRight/dsh-ainvestor) | 插件 | [v0.1.1](https://github.com/NOirBRight/dsh-ainvestor/tree/v0.1.1) | 维护中 | AiInvestor 分析助手，以 Host 工具提供 A 股缠论、综合评分、财务数据和本地投资知识库。 | 网络, 第三方服务, 界面扩展 |
 | [dsh-external-agents](https://github.com/NOirBRight/dsh-external-agents) | 插件 | [v0.2.2](https://github.com/NOirBRight/dsh-external-agents/tree/v0.2.2) | 维护中 | 外部 Agent 控制面，接入 Codex、Claude Code、Cursor Agent 与 Antigravity，并提供设置和后台任务可见性。 | 凭据, 网络, 子进程, 界面扩展 |
 | [dsh-llm-assistant](https://github.com/NOirBRight/dsh-llm-assistant) | 插件 | [v0.1.5](https://github.com/NOirBRight/dsh-llm-assistant/tree/v0.1.5) | 已隔离 | 常驻 DeepSeek 助手席位，拥有独立会话历史、提醒、交接和按需只读任务引用。 | 网络, 会话数据, 界面扩展 |
-| [dsh-ponytail](https://github.com/NOirBRight/dsh-ponytail) | 插件 | [v0.2.1](https://github.com/NOirBRight/dsh-ponytail/tree/v0.2.1) | 维护中 | Ponytail 会话模式与审查技能，提供模式持久化、Native Subagent 继承和精简运行时提示。 | 会话数据, 界面扩展 |
+| [dsh-ponytail](https://github.com/NOirBRight/dsh-ponytail) | 插件 | [v0.2.2](https://github.com/NOirBRight/dsh-ponytail/tree/v0.2.2) | 维护中 | Ponytail 会话模式与审查技能，提供模式持久化、Native Subagent 继承和精简运行时提示。 | 会话数据, 界面扩展 |
 
 ### 远程访问
 
