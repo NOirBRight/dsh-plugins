@@ -65,17 +65,17 @@
       "repository": "NOirBRight/dsh-llm-commandcode",
       "url": "https://github.com/NOirBRight/dsh-llm-commandcode",
       "category": "models",
-      "version": "0.1.17",
-      "tag": "v0.1.17",
-      "commit": "696af202359d267107af978020f4025dcb551947",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.17/dsh-llm-commandcode-0.1.17.tgz",
+      "version": "0.1.18",
+      "tag": "v0.1.18",
+      "commit": "58511e9ad9504242bab50cde4b7dcbc474b1e015",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.18/dsh-llm-commandcode-0.1.18.tgz",
       "installLatest": [
         "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode-0.1.17.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode-0.1.18.tgz"
       ],
       "installFixed": [
         "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.17/dsh-llm-commandcode-0.1.17.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.18/dsh-llm-commandcode-0.1.18.tgz"
       ],
       "license": "MIT",
       "profiles": [
@@ -100,11 +100,11 @@
         ]
       },
       "release": {
-        "asset": "dsh-llm-commandcode-0.1.17.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode-0.1.17.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.17/dsh-llm-commandcode-0.1.17.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.17/SHA256SUMS",
-        "sha256": "fa21d9f31add7f6872bba5794fbc9e9fc3c2ff496d7024cda785fba6a4258c2e"
+        "asset": "dsh-llm-commandcode-0.1.18.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode-0.1.18.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.18/dsh-llm-commandcode-0.1.18.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.18/SHA256SUMS",
+        "sha256": "9cb95ab5ccb6857441197bd31b42850826a611a98c267f624d977915cbd09061"
       },
       "notice": {
         "en": "Chat uses the documented Provider API; optional quota reporting also reads unofficial account routes used by the official CLI.",
@@ -273,17 +273,17 @@
       "repository": "NOirBRight/dsh-llm-opencode-go",
       "url": "https://github.com/NOirBRight/dsh-llm-opencode-go",
       "category": "models",
-      "version": "0.1.17",
-      "tag": "v0.1.17",
-      "commit": "7567ba302514bc325bbdb1a1b3c3b0535b016672",
-      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.17/dsh-llm-opencode-go-0.1.17.tgz",
+      "version": "0.1.18",
+      "tag": "v0.1.18",
+      "commit": "3c76af96a1a42b4953982d19eae19d68b3c69825",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.18/dsh-llm-opencode-go-0.1.18.tgz",
       "installLatest": [
         "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/latest/download/dsh-llm-opencode-go-0.1.17.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/latest/download/dsh-llm-opencode-go-0.1.18.tgz"
       ],
       "installFixed": [
         "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
-        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.17/dsh-llm-opencode-go-0.1.17.tgz"
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.18/dsh-llm-opencode-go-0.1.18.tgz"
       ],
       "license": "MIT",
       "profiles": [
@@ -307,11 +307,11 @@
         ]
       },
       "release": {
-        "asset": "dsh-llm-opencode-go-0.1.17.tgz",
-        "latestUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/latest/download/dsh-llm-opencode-go-0.1.17.tgz",
-        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.17/dsh-llm-opencode-go-0.1.17.tgz",
-        "sha256Url": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.17/SHA256SUMS",
-        "sha256": "250312ca956a53fd5b43296ff95b6eb13259d1a35bf7abefb9b78828e34e5177"
+        "asset": "dsh-llm-opencode-go-0.1.18.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/latest/download/dsh-llm-opencode-go-0.1.18.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.18/dsh-llm-opencode-go-0.1.18.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/download/v0.1.18/SHA256SUMS",
+        "sha256": "3653e5a6fc1813a5eb17f3598ea620ad4afcf17fc065bb752c83e81d3c0a009a"
       }
     },
     {

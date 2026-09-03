@@ -15,11 +15,11 @@
 | 条目 | 类型 | 版本 | 状态 | 简介 | 披露 |
 |---|---|---:|---|---|---|
 | [dsh-llm-codex](https://github.com/NOirBRight/dsh-llm-codex) | 插件 | [v0.3.8](https://github.com/NOirBRight/dsh-llm-codex/tree/v0.3.8) | 维护中 | ChatGPT Codex 订阅登录、可排序模型目录、Fast 与 1M 变体、实时额度，以及可选搜索和图像工具。 | 凭据, 网络, OAuth, 第三方服务, 订阅账号 |
-| [dsh-llm-commandcode](https://github.com/NOirBRight/dsh-llm-commandcode) | 插件 | [v0.1.17](https://github.com/NOirBRight/dsh-llm-commandcode/tree/v0.1.17) | 维护中 | Command Code Provider API 聊天，模型发现和凭据存储均由 Host 持有，并提供 best-effort 订阅用量展示。 | 凭据, 网络, 第三方服务, 订阅账号, 非官方接口 |
+| [dsh-llm-commandcode](https://github.com/NOirBRight/dsh-llm-commandcode) | 插件 | [v0.1.18](https://github.com/NOirBRight/dsh-llm-commandcode/tree/v0.1.18) | 维护中 | Command Code Provider API 聊天，模型发现和凭据存储均由 Host 持有，并提供 best-effort 订阅用量展示。 | 凭据, 网络, 第三方服务, 订阅账号, 非官方接口 |
 | [dsh-llm-cursor](https://github.com/NOirBRight/dsh-llm-cursor) | 插件 | [v0.2.15](https://github.com/NOirBRight/dsh-llm-cursor/tree/v0.2.15) | 维护中 | 非官方 Cursor 订阅登录与聊天，Host 持有 PKCE 凭据，并提供模型发现与订阅用量展示。 | 封号风险, 凭据, 网络, OAuth, 第三方服务, 订阅账号, 非官方接口 |
 | [dsh-llm-grok](https://github.com/NOirBRight/dsh-llm-grok) | 插件 | [v0.3.8](https://github.com/NOirBRight/dsh-llm-grok/tree/v0.3.8) | 维护中 | xAI Grok 订阅登录与 Responses 聊天，提供可配置模型、用量展示、服务端搜索和 Imagine 生图。 | 凭据, 网络, OAuth, 第三方服务, 订阅账号 |
 | [dsh-llm-ollama](https://github.com/NOirBRight/dsh-llm-ollama) | 插件 | [v0.6.16](https://github.com/NOirBRight/dsh-llm-ollama/tree/v0.6.16) | 维护中 | 通过 OpenAI 兼容适配器接入 Ollama Cloud 聊天，并提供原生模型发现及 Web Search、Fetch provider。 | 凭据, 网络, 第三方服务 |
-| [dsh-llm-opencode-go](https://github.com/NOirBRight/dsh-llm-opencode-go) | 插件 | [v0.1.17](https://github.com/NOirBRight/dsh-llm-opencode-go/tree/v0.1.17) | 维护中 | OpenCode Go 模型集成，按模型路由 Completions、Responses 或 Anthropic Messages，并提供发现和订阅用量。 | 凭据, 网络, 第三方服务, 订阅账号 |
+| [dsh-llm-opencode-go](https://github.com/NOirBRight/dsh-llm-opencode-go) | 插件 | [v0.1.18](https://github.com/NOirBRight/dsh-llm-opencode-go/tree/v0.1.18) | 维护中 | OpenCode Go 模型集成，按模型路由 Completions、Responses 或 Anthropic Messages，并提供发现和订阅用量。 | 凭据, 网络, 第三方服务, 订阅账号 |
 
 ### 界面
 

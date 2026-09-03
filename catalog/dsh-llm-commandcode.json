@@ -5,9 +5,9 @@
   "packageName": "dsh-llm-commandcode",
   "repository": "NOirBRight/dsh-llm-commandcode",
   "category": "models",
-  "version": "0.1.17",
-  "tag": "v0.1.17",
-  "commit": "696af202359d267107af978020f4025dcb551947",
+  "version": "0.1.18",
+  "tag": "v0.1.18",
+  "commit": "58511e9ad9504242bab50cde4b7dcbc474b1e015",
   "license": "MIT",
   "profiles": [
     "web"
@@ -31,11 +31,11 @@
     ]
   },
   "release": {
-    "asset": "dsh-llm-commandcode-0.1.17.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode-0.1.17.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.17/dsh-llm-commandcode-0.1.17.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.17/SHA256SUMS",
-    "sha256": "fa21d9f31add7f6872bba5794fbc9e9fc3c2ff496d7024cda785fba6a4258c2e"
+    "asset": "dsh-llm-commandcode-0.1.18.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/latest/download/dsh-llm-commandcode-0.1.18.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.18/dsh-llm-commandcode-0.1.18.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-commandcode/releases/download/v0.1.18/SHA256SUMS",
+    "sha256": "9cb95ab5ccb6857441197bd31b42850826a611a98c267f624d977915cbd09061"
   },
   "notice": {
     "en": "Chat uses the documented Provider API; optional quota reporting also reads unofficial account routes used by the official CLI.",
