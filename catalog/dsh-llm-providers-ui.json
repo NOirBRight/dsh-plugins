@@ -5,9 +5,9 @@
   "packageName": "dsh-llm-providers-ui",
   "repository": "NOirBRight/dsh-llm-providers-ui",
   "category": "interface",
-  "version": "0.1.3",
-  "tag": "v0.1.3",
-  "commit": "385cda3b14219ed7c730b8f07b5cbd7a3ecd4451",
+  "version": "0.1.4",
+  "tag": "v0.1.4",
+  "commit": "0a645d98b9900a409f1dce2a812f520555995a5b",
   "license": "MIT",
   "profiles": [
     "web"
@@ -22,10 +22,10 @@
     "ui-extension"
   ],
   "release": {
-    "asset": "dsh-llm-providers-ui-0.1.3.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/SHA256SUMS",
-    "sha256": "751a669d5f66725bb3160beea4e607f13a5dd4797525931394bdfbc0676690b2"
+    "asset": "dsh-llm-providers-ui-0.1.4.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.4.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.4/dsh-llm-providers-ui-0.1.4.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.4/SHA256SUMS",
+    "sha256": "752ebd9bce8e787a6150c4d8f3540492751505970d7a3108d31a302db77b4ba4"
   }
 }

@@ -28,7 +28,7 @@
 | [dsh-buddy](https://github.com/NOirBRight/dsh-buddy) | 插件 | [v0.1.0](https://github.com/NOirBRight/dsh-buddy/tree/v0.1.0) | 已隔离 | AM01S USB 副屏上的像素鲸鱼看板与触控遥控器，显示 DSH 状态、会话、审批和问题。 | 网络, 远程访问, 界面扩展 |
 | [dsh-codex-sidebar](https://github.com/NOirBRight/dsh-codex-sidebar) | 插件 | [v0.5.11](https://github.com/NOirBRight/dsh-codex-sidebar/tree/v0.5.11) | 维护中 | 为一条 DSH 主会话提供 Codex 风格右侧栏，Files、Review、Browser 与 Terminal 共用标签栏。 | 浏览器自动化, 网络, 子进程, 界面扩展 |
 | [dsh-composer-picker](https://github.com/NOirBRight/dsh-composer-picker) | 插件 | [v0.1.3](https://github.com/NOirBRight/dsh-composer-picker/tree/v0.1.3) | 已弃用 | 纯客户端后缀分组 Composer 模型选择器，带独立 Plan Review，不依赖具体 Provider 运行时。 | 界面扩展 |
-| [dsh-llm-providers-ui](https://github.com/NOirBRight/dsh-llm-providers-ui) | 插件 | [v0.1.3](https://github.com/NOirBRight/dsh-llm-providers-ui/tree/v0.1.3) | 维护中 | 共享 LLM Providers 设置 Owner，统一管理 Provider 卡片、导航和独立模型插件之间的持久化排序。 | 界面扩展 |
+| [dsh-llm-providers-ui](https://github.com/NOirBRight/dsh-llm-providers-ui) | 插件 | [v0.1.4](https://github.com/NOirBRight/dsh-llm-providers-ui/tree/v0.1.4) | 维护中 | 共享 LLM Providers 设置 Owner，统一管理 Provider 卡片、导航和独立模型插件之间的持久化排序。 | 界面扩展 |
 | [dsh-model-switch](https://github.com/NOirBRight/dsh-model-switch) | 插件 | [v0.4.5](https://github.com/NOirBRight/dsh-model-switch/tree/v0.4.5) | 维护中 | 为 Main、Subagent、Composer、Plan Review、Web Search 和图像生成提供显式路由，不修改 DSH Core。 | 界面扩展 |
 
 ### 助手
@@ -133,12 +133,12 @@ Composer 弹出菜单，显示 GPT-5.6 Sol 的 Model、Effort、Context 和 Fast
 
 **Latest：**
 
-    dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz
+    dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.4.tgz
     dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-codex/releases/latest/download/dsh-llm-codex-0.3.8.tgz
 
 **固定版本：**
 
-    dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz
+    dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.4/dsh-llm-providers-ui-0.1.4.tgz
     dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.8/dsh-llm-codex-0.3.8.tgz
 
 Latest URL 指向当前带版本号的正式资产，并会随 catalog release 一起更新；固定 URL 指向正式 release tag。GitHub 包构建脚本可能在 agent 沙箱之外执行，安装前请审查源码和 SHA256SUMS。

@@ -28,7 +28,7 @@ An independent, machine-readable catalog of DSH plugins and the mobile companion
 | [dsh-buddy](https://github.com/NOirBRight/dsh-buddy) | Plugin | [v0.1.0](https://github.com/NOirBRight/dsh-buddy/tree/v0.1.0) | Quarantined | Pixel whale dashboard and touch remote for the AM01S USB sub-screen, showing DSH moods, sessions, approvals, and questions. | Network, Remote access, UI extension |
 | [dsh-codex-sidebar](https://github.com/NOirBRight/dsh-codex-sidebar) | Plugin | [v0.5.11](https://github.com/NOirBRight/dsh-codex-sidebar/tree/v0.5.11) | Active | Codex-style right sidebar for one DSH session, with Files, Review, Browser, and Terminal sharing a single tab strip. | Browser automation, Network, Subprocess, UI extension |
 | [dsh-composer-picker](https://github.com/NOirBRight/dsh-composer-picker) | Plugin | [v0.1.3](https://github.com/NOirBRight/dsh-composer-picker/tree/v0.1.3) | Deprecated | Client-only suffix-grouped composer model picker with standalone Plan Review and no provider runtime dependency. | UI extension |
-| [dsh-llm-providers-ui](https://github.com/NOirBRight/dsh-llm-providers-ui) | Plugin | [v0.1.3](https://github.com/NOirBRight/dsh-llm-providers-ui/tree/v0.1.3) | Active | Shared LLM Providers settings owner for provider cards, navigation, and persisted ordering across independent model plugins. | UI extension |
+| [dsh-llm-providers-ui](https://github.com/NOirBRight/dsh-llm-providers-ui) | Plugin | [v0.1.4](https://github.com/NOirBRight/dsh-llm-providers-ui/tree/v0.1.4) | Active | Shared LLM Providers settings owner for provider cards, navigation, and persisted ordering across independent model plugins. | UI extension |
 | [dsh-model-switch](https://github.com/NOirBRight/dsh-model-switch) | Plugin | [v0.4.5](https://github.com/NOirBRight/dsh-model-switch/tree/v0.4.5) | Active | Explicit routing for Main, Subagent, Composer, Plan Review, Web Search, and image generation without patching DSH Core. | UI extension |
 
 ### Assistant
@@ -133,12 +133,12 @@ Use the Latest command from [dist/index.json](dist/index.json) for routine updat
 
 **Latest:**
 
-    dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz
+    dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.4.tgz
     dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-codex/releases/latest/download/dsh-llm-codex-0.3.8.tgz
 
 **Fixed:**
 
-    dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz
+    dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.4/dsh-llm-providers-ui-0.1.4.tgz
     dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-codex/releases/download/v0.3.8/dsh-llm-codex-0.3.8.tgz
 
 Latest URLs follow the current versioned release asset and are refreshed with each catalog release. Fixed URLs point to a signed release tag. GitHub package build scripts may execute outside the agent sandbox, so review source and SHA256SUMS before installing.
