@@ -2,17 +2,17 @@
   "schemaVersion": 1,
   "kind": "plugin",
   "id": "dsh-ponytail",
-  "packageName": "dsh-ponytail-skills",
+  "packageName": "dsh-ponytail",
   "repository": "NOirBRight/dsh-ponytail",
   "category": "assistant",
-  "version": "0.2.1",
-  "tag": "v0.2.1",
-  "commit": "c781eaaaeef790ff073095512d6ae17bc393f0d6",
+  "version": "0.2.6",
+  "tag": "v0.2.6",
+  "commit": "1ff44ee7d9ef8c99f317f7d14875aa14d4027b43",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": "=0.1.2-alpha.4",
+  "dshCompatibility": ">=0.1.2-alpha.4 <1.0.0 || 0.1.2-alpha.5 || 0.1.2-rc.1",
   "status": "active",
   "descriptions": {
     "en": "Ponytail session modes and review skills with persisted mode controls, Native Subagent inheritance, and compact runtime prompts.",
@@ -23,11 +23,11 @@
     "ui-extension"
   ],
   "release": {
-    "asset": "dsh-ponytail-skills-0.2.1.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-ponytail/releases/latest/download/dsh-ponytail-skills-0.2.1.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.1/dsh-ponytail-skills-0.2.1.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.1/SHA256SUMS",
-    "sha256": "4d819f32c2da7b5169bb3f2e3cc4afaff58450091b7c70c12557b7c2798e0e40"
+    "asset": "dsh-ponytail-0.2.6.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-ponytail/releases/latest/download/dsh-ponytail-0.2.6.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.6/dsh-ponytail-0.2.6.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-ponytail/releases/download/v0.2.6/SHA256SUMS",
+    "sha256": "3eedb35dc8c95397cc8e413d38b7c7b33602a183b083588f8229ab4b49525a80"
   },
   "notice": {
     "en": "Newly deployed in the Alpha.4 campaign. Mode changes apply to new accepted steps and are recorded in the session log.",

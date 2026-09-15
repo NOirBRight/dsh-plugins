@@ -5,14 +5,14 @@
   "packageName": "dsh-llm-providers-ui",
   "repository": "NOirBRight/dsh-llm-providers-ui",
   "category": "interface",
-  "version": "0.1.3",
-  "tag": "v0.1.3",
-  "commit": "385cda3b14219ed7c730b8f07b5cbd7a3ecd4451",
+  "version": "0.2.9",
+  "tag": "v0.2.9",
+  "commit": "dcbd467e0a8bdbcc07d6da81ad1714baeb0a6643",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": "=0.1.2-alpha.4",
+  "dshCompatibility": ">=0.1.2-alpha.4 <1.0.0 || 0.1.2-alpha.5 || 0.1.2-rc.1",
   "status": "active",
   "descriptions": {
     "en": "Shared LLM Providers settings owner for provider cards, navigation, and persisted ordering across independent model plugins.",
@@ -22,10 +22,10 @@
     "ui-extension"
   ],
   "release": {
-    "asset": "dsh-llm-providers-ui-0.1.3.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.1.3.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/dsh-llm-providers-ui-0.1.3.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.1.3/SHA256SUMS",
-    "sha256": "751a669d5f66725bb3160beea4e607f13a5dd4797525931394bdfbc0676690b2"
+    "asset": "dsh-llm-providers-ui-0.2.9.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.2.9.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.2.9/dsh-llm-providers-ui-0.2.9.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.2.9/SHA256SUMS",
+    "sha256": "ae2f2c06b86e193a581fc0d79c8278ec4a028110aa4558fa4f5841070c09a45c"
   }
 }

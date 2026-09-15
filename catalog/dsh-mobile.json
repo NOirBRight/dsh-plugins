@@ -5,12 +5,12 @@
   "packageName": "dsh-mobile",
   "repository": "NOirBRight/dsh-mobile",
   "category": "remote",
-  "version": "1.1.4",
-  "tag": "v1.1.4",
-  "commit": "5eac5208ccda2eb4d38fa723ac65b4b2d3dd6117",
+  "version": "1.1.14",
+  "tag": "v1.1.14",
+  "commit": "763961a8189909cdff3293a40ac112b5da0937ab",
   "license": "MIT",
   "profiles": [],
-  "dshCompatibility": "=0.1.2-alpha.4",
+  "dshCompatibility": ">=0.1.2-alpha.4 <1.0.0 || 0.1.2-alpha.5 || 0.1.2-rc.1",
   "status": "active",
   "descriptions": {
     "en": "Android companion for your own DSH Host with QR pairing, end-to-end encrypted tunnel transport, official features, and a mobile layout.",
@@ -27,14 +27,14 @@
     ]
   },
   "artifact": {
-    "name": "dsh-mobile-1.1.4.apk",
-    "downloadUrl": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.4/dsh-mobile-1.1.4.apk",
-    "latestUrl": "https://github.com/NOirBRight/dsh-mobile/releases/latest/download/dsh-mobile-1.1.4.apk",
-    "sha256Url": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.4/SHA256SUMS",
-    "sha256": "05d0e9b8e5a02c85fc7d456ff3592c8de3379ba46e468d1a06834a18c534c4a7"
+    "name": "dsh-mobile-1.1.14.apk",
+    "downloadUrl": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.14/dsh-mobile-1.1.14.apk",
+    "latestUrl": "https://github.com/NOirBRight/dsh-mobile/releases/latest/download/dsh-mobile-1.1.14.apk",
+    "sha256Url": "https://github.com/NOirBRight/dsh-mobile/releases/download/v1.1.14/SHA256SUMS",
+    "sha256": "92e3e2ec4c7d74a6a178a5ff0b3cbf5abb6937a2cbad7a283415d6c031f59bbc"
   },
   "notice": {
-    "en": "Requires dsh-mobile-pairing on the Host. The v1.1.4 release is a signed APK (versionCode 15) with the mobile layout and plugin settings surfaces.",
-    "zh": "需要在 Host 安装 dsh-mobile-pairing。v1.1.4 是 versionCode 15 的正式签名 APK，包含移动布局和插件设置界面。"
+    "en": "Requires dsh-mobile-pairing on the Host. The v1.1.14 release is a signed APK (versionCode 27) with IndexedDB Host plugin cache, the mobile layout, and plugin settings surfaces.",
+    "zh": "需要在 Host 安装 dsh-mobile-pairing。v1.1.14 是 versionCode 27 的正式签名 APK，包含 IndexedDB Host 插件缓存、移动布局和插件设置界面。"
   }
 }

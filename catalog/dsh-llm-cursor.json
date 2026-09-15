@@ -5,14 +5,14 @@
   "packageName": "dsh-llm-cursor",
   "repository": "NOirBRight/dsh-llm-cursor",
   "category": "models",
-  "version": "0.2.15",
-  "tag": "v0.2.15",
-  "commit": "70e7201ab16c0063bd9e7a87dc90d6d4477d171d",
+  "version": "0.2.23",
+  "tag": "v0.2.23",
+  "commit": "09766521775e0eeb3c6852c3c0c99661cc9814b9",
   "license": "MIT",
   "profiles": [
     "web"
   ],
-  "dshCompatibility": "=0.1.2-alpha.4",
+  "dshCompatibility": ">=0.1.2-alpha.4 <1.0.0 || 0.1.2-alpha.5 || 0.1.2-rc.1",
   "status": "active",
   "descriptions": {
     "en": "Unofficial Cursor subscription login and chat with Host-owned PKCE credentials, model discovery, and subscription usage rails.",
@@ -33,11 +33,11 @@
     ]
   },
   "release": {
-    "asset": "dsh-llm-cursor-0.2.15.tgz",
-    "latestUrl": "https://github.com/NOirBRight/dsh-llm-cursor/releases/latest/download/dsh-llm-cursor-0.2.15.tgz",
-    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.15/dsh-llm-cursor-0.2.15.tgz",
-    "sha256Url": "https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.15/SHA256SUMS",
-    "sha256": "68d0a38623528dbe2066b81edac3ef30537014dfd74f442a1cba2a19144c40e5"
+    "asset": "dsh-llm-cursor-0.2.23.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-llm-cursor/releases/latest/download/dsh-llm-cursor-0.2.23.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.23/dsh-llm-cursor-0.2.23.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-llm-cursor/releases/download/v0.2.23/SHA256SUMS",
+    "sha256": "55445ca6653c04880b4f2a9b92359b88e2856fea6fa767a43ae412e2124b3bfc"
   },
   "notice": {
     "en": "Cursor staff treat this private-client access as against their Terms of Service. The account can be restricted or banned merely by installing, signing in, or sending chat.",

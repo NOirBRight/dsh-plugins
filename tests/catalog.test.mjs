@@ -28,7 +28,7 @@ test('high-impact disclosures remain explicit', () => {
   const index = JSON.parse(renderIndex(entries))
   assert.match(readme, /account can be restricted or banned/i)
   assert.match(readme, /Mobile app/)
-  assert.match(readme, /05d0e9b8e5a02c85fc7d456ff3592c8de3379ba46e468d1a06834a18c534c4a7/)
+  assert.match(readme, /92e3e2ec4c7d74a6a178a5ff0b3cbf5abb6937a2cbad7a283415d6c031f59bbc/)
   assert.match(readme, /dshmarket 1\.40\.0/)
   assert.match(readme, /What these plugins do/)
   assert.match(readme, /docs\/screenshots\/llm-providers.jpg/)
