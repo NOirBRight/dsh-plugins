@@ -35,6 +35,9 @@
 
 | 条目 | 类型 | 版本 | 状态 | 简介 | 披露 |
 |---|---|---:|---|---|---|
+| [dsh-acp-antigravity](https://github.com/NOirBRight/dsh-acp-antigravity) | 插件 | [v0.1.10](https://github.com/NOirBRight/dsh-acp-antigravity/tree/v0.1.10) | 维护中 | Google Antigravity ACP 适配，在 DSH 内提供原生会话、模型发现、OAuth 与权限提示。 | 凭据, 网络, OAuth, 子进程, 第三方服务, 界面扩展 |
+| [dsh-acp-cursor](https://github.com/NOirBRight/dsh-acp-cursor) | 插件 | [v0.1.18](https://github.com/NOirBRight/dsh-acp-cursor/tree/v0.1.18) | 维护中 | 官方 Cursor Agent ACP 适配。DSH 提供聊天与审批壳层，Cursor 在本机拥有回合、工具、登录和额度。 | 凭据, 网络, OAuth, 子进程, 第三方服务, 界面扩展 |
+| [dsh-acp-provider](https://github.com/NOirBRight/dsh-acp-provider) | 插件 | [v0.1.3](https://github.com/NOirBRight/dsh-acp-provider/tree/v0.1.3) | 维护中 | 面向 ACP 适配器的中立 External Agent 平台，负责注册路由并执行原生回合。 | 无 |
 | [dsh-ainvestor](https://github.com/NOirBRight/dsh-ainvestor) | 插件 | [v0.1.2](https://github.com/NOirBRight/dsh-ainvestor/tree/v0.1.2) | 维护中 | AiInvestor 分析助手，以 Host 工具提供 A 股缠论、综合评分、财务数据和本地投资知识库。 | 网络, 第三方服务, 界面扩展 |
 | [dsh-external-agents](https://github.com/NOirBRight/dsh-external-agents) | 插件 | [v0.2.5](https://github.com/NOirBRight/dsh-external-agents/tree/v0.2.5) | 维护中 | 外部 Agent 控制面，接入 Codex、Claude Code、Cursor Agent 与 Antigravity，并提供设置和后台任务可见性。 | 凭据, 网络, 子进程, 界面扩展 |
 | [dsh-llm-assistant](https://github.com/NOirBRight/dsh-llm-assistant) | 插件 | [v0.1.5](https://github.com/NOirBRight/dsh-llm-assistant/tree/v0.1.5) | 已隔离 | 常驻 DeepSeek 助手席位，拥有独立会话历史、提醒、交接和按需只读任务引用。 | 网络, 会话数据, 界面扩展 |
@@ -118,6 +121,9 @@ Composer 弹出菜单，显示 GPT-5.6 Sol 的 Model、Effort、Context 和 Fast
 - **[dsh-llm-ollama](https://github.com/NOirBRight/dsh-llm-ollama)** — 已发布并部署到 Alpha.4 Host，已验证配置恢复和 Settings 加载；因 Ollama 额度耗尽，真实 discovery 和聊天记为 SKIP-QUOTA。
 - **[dsh-buddy](https://github.com/NOirBRight/dsh-buddy)** — 因当前版本尚未完成 Alpha.4 迁移和交互验收，本次不发布 Buddy。仅应在其兼容 Alpha.1 的 Runtime 中继续使用。
 - **[dsh-composer-picker](https://github.com/NOirBRight/dsh-composer-picker)** — 该插件已并入 dsh-model-switch。请勿同时安装，两者会竞争同一个选择器位置。
+- **[dsh-acp-antigravity](https://github.com/NOirBRight/dsh-acp-antigravity)** — Settings → Antigravity → Install 会下载钉扎的 Google ACP zip。插件 tarball 不携带 Google 二进制。
+- **[dsh-acp-cursor](https://github.com/NOirBRight/dsh-acp-cursor)** — 这不是 dsh-llm-cursor。Settings → Cursor → Install 会安装官方 CLI；登录使用本机 cursor-agent login。
+- **[dsh-acp-provider](https://github.com/NOirBRight/dsh-acp-provider)** — 无独立 bundle 的 profile 依赖。请与 dsh-acp-cursor 或 dsh-acp-antigravity 一起安装。
 - **[dsh-llm-assistant](https://github.com/NOirBRight/dsh-llm-assistant)** — 因当前版本尚未完成 Alpha.4 迁移和交互验收，本次不发布 Assistant。仅应在其历史兼容 Runtime 中继续使用。
 - **[dsh-ponytail](https://github.com/NOirBRight/dsh-ponytail)** — 本次 Alpha.4 campaign 新增部署。模式变更在新的 accepted step 生效，并写入会话日志。
 - **[dsh-mobile](https://github.com/NOirBRight/dsh-mobile)** — 需要在 Host 安装 dsh-mobile-pairing。v1.1.14 是 versionCode 27 的正式签名 APK，包含 IndexedDB Host 插件缓存、移动布局和插件设置界面。

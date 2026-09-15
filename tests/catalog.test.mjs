@@ -6,11 +6,11 @@ import { loadEntries, renderIndex, renderReadme, ROOT, validateEntry } from '../
 
 test('catalog contains the published plugins and mobile companion', () => {
   const entries = loadEntries()
-  assert.equal(entries.length, 18)
-  assert.equal(new Set(entries.map(entry => entry.repository)).size, 18)
-  assert.equal(entries.filter(entry => entry.kind === 'plugin').length, 17)
+  assert.equal(entries.length, 21)
+  assert.equal(new Set(entries.map(entry => entry.repository)).size, 21)
+  assert.equal(entries.filter(entry => entry.kind === 'plugin').length, 20)
   assert.equal(entries.filter(entry => entry.kind === 'companion-app').length, 1)
-  assert.equal(entries.filter(entry => entry.status === 'active').length, 15)
+  assert.equal(entries.filter(entry => entry.status === 'active').length, 18)
   assert.equal(entries.filter(entry => entry.status === 'quarantined').length, 2)
   assert.equal(entries.filter(entry => entry.status === 'deprecated').length, 1)
 })
@@ -37,10 +37,12 @@ test('high-impact disclosures remain explicit', () => {
   assert.match(readme, /docs\/screenshots\/composer-picker.jpg/)
   assert.match(readme, /docs\/screenshots\/mobile-remote.jpg/)
   assert.match(readme, /docs\/screenshots\/usage-monitor.jpg/)
-  assert.equal(index.plugins.length, 17)
+  assert.equal(index.plugins.length, 20)
   assert.equal(index.companionApps.length, 1)
   assert.equal(index.plugins.find(entry => entry.id === 'dsh-llm-commandcode').installLatest.length, 2)
   assert.match(index.plugins.find(entry => entry.id === 'dsh-llm-commandcode').installLatest[0], /dsh-llm-providers-ui/)
+  assert.equal(index.plugins.find(entry => entry.id === 'dsh-acp-cursor').installLatest.length, 3)
+  assert.match(index.plugins.find(entry => entry.id === 'dsh-acp-cursor').installLatest[0], /dsh-acp-provider/)
 })
 
 test('screenshot files exist for every README image', () => {

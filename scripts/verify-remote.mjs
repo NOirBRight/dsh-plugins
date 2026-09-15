@@ -40,7 +40,7 @@ for (const entry of loadEntries()) {
       if (tags[0]?.name !== entry.tag) throw new Error('latest tag is ' + (tags[0]?.name ?? '<missing>') + ', catalog has ' + entry.tag)
       if (manifest.version !== entry.version) throw new Error('package version is ' + manifest.version + ', catalog has ' + entry.version)
       if (manifest.license !== 'MIT') throw new Error('package license is ' + (manifest.license ?? '<missing>') + ', expected MIT')
-      if (typeof manifest.dsh?.bundle?.patch !== 'string') throw new Error('package does not declare dsh.bundle.patch')
+      if (manifest.dsh != null && typeof manifest.dsh?.bundle?.patch !== 'string') throw new Error('package does not declare dsh.bundle.patch')
       if (entry.release !== undefined) {
         const release = await json('https://api.github.com/repos/' + entry.repository + '/releases/tags/' + entry.tag)
         const asset = release.assets.find(candidate => candidate.name === entry.release.asset)

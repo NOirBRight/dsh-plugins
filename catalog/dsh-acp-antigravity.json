@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "id": "dsh-acp-antigravity",
+  "packageName": "@deepseek-ai/dsh-acp-antigravity",
+  "repository": "NOirBRight/dsh-acp-antigravity",
+  "category": "assistant",
+  "version": "0.1.10",
+  "tag": "v0.1.10",
+  "commit": "d23831cdbbaf76b6549c137d062972668af2bba6",
+  "license": "MIT",
+  "profiles": [
+    "web"
+  ],
+  "dshCompatibility": "0.1.5-rc.1 || 0.1.5-rc.2",
+  "status": "active",
+  "descriptions": {
+    "en": "Google Antigravity ACP provider with native sessions, model discovery, OAuth, and permission prompts inside DSH.",
+    "zh": "Google Antigravity ACP 适配，在 DSH 内提供原生会话、模型发现、OAuth 与权限提示。"
+  },
+  "policyFlags": [
+    "credentials",
+    "network",
+    "oauth",
+    "subprocess",
+    "third-party-service",
+    "ui-extension"
+  ],
+  "dependencies": {
+    "required": [
+      "dsh-acp-provider",
+      "dsh-llm-providers-ui"
+    ],
+    "optional": [
+      "dsh-model-switch"
+    ]
+  },
+  "notice": {
+    "en": "Settings → Antigravity → Install downloads the pinned Google ACP zip. The plugin tarball does not ship Google binaries.",
+    "zh": "Settings → Antigravity → Install 会下载钉扎的 Google ACP zip。插件 tarball 不携带 Google 二进制。"
+  },
+  "release": {
+    "asset": "deepseek-ai-dsh-acp-antigravity-0.1.10.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-acp-antigravity/releases/latest/download/deepseek-ai-dsh-acp-antigravity-0.1.10.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-acp-antigravity/releases/download/v0.1.10/deepseek-ai-dsh-acp-antigravity-0.1.10.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-acp-antigravity/releases/download/v0.1.10/SHA256SUMS",
+    "sha256": "87ba5713bd68bbe6aa439a66f81e22562e8d5f9557bdf088d4ca2221342a6baf"
+  }
+}

@@ -512,6 +512,163 @@
     },
     {
       "kind": "plugin",
+      "id": "dsh-acp-antigravity",
+      "packageName": "@deepseek-ai/dsh-acp-antigravity",
+      "repository": "NOirBRight/dsh-acp-antigravity",
+      "url": "https://github.com/NOirBRight/dsh-acp-antigravity",
+      "category": "assistant",
+      "version": "0.1.10",
+      "tag": "v0.1.10",
+      "commit": "d23831cdbbaf76b6549c137d062972668af2bba6",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-antigravity/releases/download/v0.1.10/deepseek-ai-dsh-acp-antigravity-0.1.10.tgz",
+      "installLatest": [
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-provider/releases/latest/download/deepseek-ai-dsh-acp-provider-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.2.9.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-antigravity/releases/latest/download/deepseek-ai-dsh-acp-antigravity-0.1.10.tgz"
+      ],
+      "installFixed": [
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-provider/releases/download/v0.1.3/deepseek-ai-dsh-acp-provider-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.2.9/dsh-llm-providers-ui-0.2.9.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-antigravity/releases/download/v0.1.10/deepseek-ai-dsh-acp-antigravity-0.1.10.tgz"
+      ],
+      "license": "MIT",
+      "profiles": [
+        "web"
+      ],
+      "dshCompatibility": "0.1.5-rc.1 || 0.1.5-rc.2",
+      "status": "active",
+      "descriptions": {
+        "en": "Google Antigravity ACP provider with native sessions, model discovery, OAuth, and permission prompts inside DSH.",
+        "zh": "Google Antigravity ACP 适配，在 DSH 内提供原生会话、模型发现、OAuth 与权限提示。"
+      },
+      "policyFlags": [
+        "credentials",
+        "network",
+        "oauth",
+        "subprocess",
+        "third-party-service",
+        "ui-extension"
+      ],
+      "dependencies": {
+        "required": [
+          "dsh-acp-provider",
+          "dsh-llm-providers-ui"
+        ],
+        "optional": [
+          "dsh-model-switch"
+        ]
+      },
+      "release": {
+        "asset": "deepseek-ai-dsh-acp-antigravity-0.1.10.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-acp-antigravity/releases/latest/download/deepseek-ai-dsh-acp-antigravity-0.1.10.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-acp-antigravity/releases/download/v0.1.10/deepseek-ai-dsh-acp-antigravity-0.1.10.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-acp-antigravity/releases/download/v0.1.10/SHA256SUMS",
+        "sha256": "87ba5713bd68bbe6aa439a66f81e22562e8d5f9557bdf088d4ca2221342a6baf"
+      },
+      "notice": {
+        "en": "Settings → Antigravity → Install downloads the pinned Google ACP zip. The plugin tarball does not ship Google binaries.",
+        "zh": "Settings → Antigravity → Install 会下载钉扎的 Google ACP zip。插件 tarball 不携带 Google 二进制。"
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "dsh-acp-cursor",
+      "packageName": "@deepseek-ai/dsh-acp-cursor",
+      "repository": "NOirBRight/dsh-acp-cursor",
+      "url": "https://github.com/NOirBRight/dsh-acp-cursor",
+      "category": "assistant",
+      "version": "0.1.18",
+      "tag": "v0.1.18",
+      "commit": "5cd195f9e98b463674a240723eee70b6ba42337a",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-cursor/releases/download/v0.1.18/deepseek-ai-dsh-acp-cursor-0.1.18.tgz",
+      "installLatest": [
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-provider/releases/latest/download/deepseek-ai-dsh-acp-provider-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/latest/download/dsh-llm-providers-ui-0.2.9.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-cursor/releases/latest/download/deepseek-ai-dsh-acp-cursor-0.1.18.tgz"
+      ],
+      "installFixed": [
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-provider/releases/download/v0.1.3/deepseek-ai-dsh-acp-provider-0.1.3.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-llm-providers-ui/releases/download/v0.2.9/dsh-llm-providers-ui-0.2.9.tgz",
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-cursor/releases/download/v0.1.18/deepseek-ai-dsh-acp-cursor-0.1.18.tgz"
+      ],
+      "license": "MIT",
+      "profiles": [
+        "web"
+      ],
+      "dshCompatibility": "0.1.5-rc.1 || 0.1.5-rc.2",
+      "status": "active",
+      "descriptions": {
+        "en": "Official Cursor Agent ACP provider. DSH is the shell; Cursor owns the turn, tools, login, and quota on this host.",
+        "zh": "官方 Cursor Agent ACP 适配。DSH 提供聊天与审批壳层，Cursor 在本机拥有回合、工具、登录和额度。"
+      },
+      "policyFlags": [
+        "credentials",
+        "network",
+        "oauth",
+        "subprocess",
+        "third-party-service",
+        "ui-extension"
+      ],
+      "dependencies": {
+        "required": [
+          "dsh-acp-provider",
+          "dsh-llm-providers-ui"
+        ]
+      },
+      "release": {
+        "asset": "deepseek-ai-dsh-acp-cursor-0.1.18.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-acp-cursor/releases/latest/download/deepseek-ai-dsh-acp-cursor-0.1.18.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-acp-cursor/releases/download/v0.1.18/deepseek-ai-dsh-acp-cursor-0.1.18.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-acp-cursor/releases/download/v0.1.18/SHA256SUMS",
+        "sha256": "b2fa3daf955a9877af030a64620b1dd84ab3963d186291bde839d8436c33bf57"
+      },
+      "notice": {
+        "en": "This is not dsh-llm-cursor. Settings → Cursor → Install fetches the official CLI; sign-in is cursor-agent login on this host.",
+        "zh": "这不是 dsh-llm-cursor。Settings → Cursor → Install 会安装官方 CLI；登录使用本机 cursor-agent login。"
+      }
+    },
+    {
+      "kind": "plugin",
+      "id": "dsh-acp-provider",
+      "packageName": "@deepseek-ai/dsh-acp-provider",
+      "repository": "NOirBRight/dsh-acp-provider",
+      "url": "https://github.com/NOirBRight/dsh-acp-provider",
+      "category": "assistant",
+      "version": "0.1.3",
+      "tag": "v0.1.3",
+      "commit": "3426a31ea9f0e0c9b0b1cbbd7f9c7df252e0f925",
+      "install": "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-provider/releases/download/v0.1.3/deepseek-ai-dsh-acp-provider-0.1.3.tgz",
+      "installLatest": [
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-provider/releases/latest/download/deepseek-ai-dsh-acp-provider-0.1.3.tgz"
+      ],
+      "installFixed": [
+        "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-acp-provider/releases/download/v0.1.3/deepseek-ai-dsh-acp-provider-0.1.3.tgz"
+      ],
+      "license": "MIT",
+      "profiles": [
+        "web"
+      ],
+      "dshCompatibility": "0.1.5-rc.1 || 0.1.5-rc.2",
+      "status": "active",
+      "descriptions": {
+        "en": "Provider-neutral External Agent platform used by ACP adapters to register routes and run native turns.",
+        "zh": "面向 ACP 适配器的中立 External Agent 平台，负责注册路由并执行原生回合。"
+      },
+      "policyFlags": [],
+      "release": {
+        "asset": "deepseek-ai-dsh-acp-provider-0.1.3.tgz",
+        "latestUrl": "https://github.com/NOirBRight/dsh-acp-provider/releases/latest/download/deepseek-ai-dsh-acp-provider-0.1.3.tgz",
+        "fixedUrl": "https://github.com/NOirBRight/dsh-acp-provider/releases/download/v0.1.3/deepseek-ai-dsh-acp-provider-0.1.3.tgz",
+        "sha256Url": "https://github.com/NOirBRight/dsh-acp-provider/releases/download/v0.1.3/SHA256SUMS",
+        "sha256": "5c6e1a37b109043f3ce4610d437664559c99397bb6d355e7e61ea635c7aa17ad"
+      },
+      "notice": {
+        "en": "Profile dependency with no bundle of its own. Install it together with an ACP provider such as dsh-acp-cursor or dsh-acp-antigravity.",
+        "zh": "无独立 bundle 的 profile 依赖。请与 dsh-acp-cursor 或 dsh-acp-antigravity 一起安装。"
+      }
+    },
+    {
+      "kind": "plugin",
       "id": "dsh-ainvestor",
       "packageName": "dsh-ainvestor",
       "repository": "NOirBRight/dsh-ainvestor",

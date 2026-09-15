@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "kind": "plugin",
+  "id": "dsh-acp-cursor",
+  "packageName": "@deepseek-ai/dsh-acp-cursor",
+  "repository": "NOirBRight/dsh-acp-cursor",
+  "category": "assistant",
+  "version": "0.1.18",
+  "tag": "v0.1.18",
+  "commit": "5cd195f9e98b463674a240723eee70b6ba42337a",
+  "license": "MIT",
+  "profiles": [
+    "web"
+  ],
+  "dshCompatibility": "0.1.5-rc.1 || 0.1.5-rc.2",
+  "status": "active",
+  "descriptions": {
+    "en": "Official Cursor Agent ACP provider. DSH is the shell; Cursor owns the turn, tools, login, and quota on this host.",
+    "zh": "官方 Cursor Agent ACP 适配。DSH 提供聊天与审批壳层，Cursor 在本机拥有回合、工具、登录和额度。"
+  },
+  "policyFlags": [
+    "credentials",
+    "network",
+    "oauth",
+    "subprocess",
+    "third-party-service",
+    "ui-extension"
+  ],
+  "dependencies": {
+    "required": [
+      "dsh-acp-provider",
+      "dsh-llm-providers-ui"
+    ]
+  },
+  "notice": {
+    "en": "This is not dsh-llm-cursor. Settings → Cursor → Install fetches the official CLI; sign-in is cursor-agent login on this host.",
+    "zh": "这不是 dsh-llm-cursor。Settings → Cursor → Install 会安装官方 CLI；登录使用本机 cursor-agent login。"
+  },
+  "release": {
+    "asset": "deepseek-ai-dsh-acp-cursor-0.1.18.tgz",
+    "latestUrl": "https://github.com/NOirBRight/dsh-acp-cursor/releases/latest/download/deepseek-ai-dsh-acp-cursor-0.1.18.tgz",
+    "fixedUrl": "https://github.com/NOirBRight/dsh-acp-cursor/releases/download/v0.1.18/deepseek-ai-dsh-acp-cursor-0.1.18.tgz",
+    "sha256Url": "https://github.com/NOirBRight/dsh-acp-cursor/releases/download/v0.1.18/SHA256SUMS",
+    "sha256": "b2fa3daf955a9877af030a64620b1dd84ab3963d186291bde839d8436c33bf57"
+  }
+}
